@@ -1,0 +1,138 @@
+[
+    {
+        "id": 1,
+        "title": "Proyecto de Página Web",
+        "description": "Una página web moderna y receptiva.",
+        "image": "/assets/images/proyecto1.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "url": "https://enlace-al-proyecto1.com"
+    },
+    {
+        "id": 2,
+        "title": "Aplicación React",
+        "description": "Aplicación interactiva usando React.",
+        "image": "/assets/images/proyecto2.jpg",
+        "technologies": [
+            "React",
+            "Node.js"
+        ],
+        "url": "https://enlace-al-proyecto2.com"
+    },
+    {
+        "id": 3,
+        "title": "Sitio de E-commerce",
+        "description": "Una plataforma de comercio electrónico completa.",
+        "image": "/assets/images/proyecto3.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Shopify"
+        ],
+        "url": "https://enlace-al-proyecto3.com"
+    },
+    {
+        "id": 4,
+        "title": "Juego en JavaScript",
+        "description": "Un juego interactivo creado con JavaScript.",
+        "image": "/assets/images/proyecto4.jpg",
+        "technologies": [
+            "JavaScript",
+            "HTML5"
+        ],
+        "url": "https://enlace-al-proyecto4.com"
+    },
+    {
+        "id": 5,
+        "title": "Blog Personal",
+        "description": "Un blog para compartir pensamientos y experiencias.",
+        "image": "/assets/images/proyecto5.jpg",
+        "technologies": [
+            "React",
+            "CSS"
+        ],
+        "url": "https://enlace-al-proyecto5.com"
+    },
+    {
+        "id": 6,
+        "title": "Aplicación Móvil con React Native",
+        "description": "Aplicación móvil multiplataforma usando React Native.",
+        "image": "/assets/images/proyecto6.jpg",
+        "technologies": [
+            "React Native",
+            "Firebase"
+        ],
+        "url": "https://enlace-al-proyecto6.com"
+    },
+    {
+        "id": 7,
+        "title": "Sistema de Gestión de Tareas",
+        "description": "Una aplicación para gestionar tareas y proyectos.",
+        "image": "/assets/images/proyecto7.jpg",
+        "technologies": [
+            "Vue.js",
+            "Node.js"
+        ],
+        "url": "https://enlace-al-proyecto7.com"
+    },
+    {
+        "id": 8,
+        "title": "Portafolio Personal",
+        "description": "Un portafolio para mostrar proyectos y habilidades.",
+        "image": "/assets/images/proyecto8.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "url": "https://enlace-al-proyecto8.com"
+    },
+    {
+        "id": 9,
+        "title": "Dashboard de Datos",
+        "description": "Un tablero interactivo para visualización de datos.",
+        "image": "/assets/images/proyecto9.jpg",
+        "technologies": [
+            "React",
+            "D3.js"
+        ],
+        "url": "https://enlace-al-proyecto9.com"
+    },
+    {
+        "id": 10,
+        "title": "Chat en Tiempo Real",
+        "description": "Una aplicación de chat usando WebSocket.",
+        "image": "/assets/images/proyecto10.jpg",
+        "technologies": [
+            "Node.js",
+            "Socket.io"
+        ],
+        "url": "https://enlace-al-proyecto10.com"
+    },
+    {
+        "id": 11,
+        "title": "Clon de Twitter",
+        "description": "Un clon simple de la red social Twitter.",
+        "image": "/assets/images/proyecto11.jpg",
+        "technologies": [
+            "React",
+            "Firebase"
+        ],
+        "url": "https://enlace-al-proyecto11.com"
+    },
+    {
+        "id": 12,
+        "title": "Sistema de Reservas",
+        "description": "Una aplicación para gestionar reservas de eventos.",
+        "image": "/assets/images/proyecto12.jpg",
+        "technologies": [
+            "Angular",
+            "Node.js"
+        ],
+        "url": "https://enlace-al-proyecto12.com"
+    }
+]

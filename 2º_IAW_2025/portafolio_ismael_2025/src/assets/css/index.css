@@ -1,0 +1,44 @@
+.portfolio {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.project-card p {
+  color: #666;
+}
+
+.project-card a {
+  color: #000;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
