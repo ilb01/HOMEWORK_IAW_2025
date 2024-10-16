@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React  from 'react';
 import './assets/css/LandingPage.css';
 import projectsData from './assets/data/proyectos.json'; // Importar JSON
 
 function Portfolio() {
-    const [projects, setProjects] = useState([]);
-
-    // Cargar los proyectos al montar el componente
-    useEffect(() => {
-        setProjects(projectsData);
-    }, []);
-
     return (
         <div className="portfolio">
             <h1>Mis Proyectos</h1>
             <div className="projects-grid">
-                {projects.map((project) => (
+                {projectsData.map((project) => (
                     <div key={project.id} className="project-card">
                         <img src={project.image} alt={project.title} />
                         <h2>{project.title}</h2>
