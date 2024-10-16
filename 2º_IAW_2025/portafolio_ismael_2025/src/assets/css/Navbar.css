@@ -11,21 +11,13 @@
     --font_secundario: 'Montserrat', sans-serif;
 }
 
-/* src/assets/css/Navbar.css */
 .navbar {
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: space-between; /* Espacia elementos entre el logo y los enlaces */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 20px; /* Espaciado interno */
-    background-color: transparent; /* Fondo transparente para que la imagen de fondo se vea */
-    position: absolute; /* Para que se superponga a la imagen de fondo */
+    position: absolute; /* Posiciona la barra de navegación de manera absoluta */
     top: 20px; /* Distancia desde la parte superior */
     right: 20px; /* Distancia desde la derecha */
     z-index: 2; /* Asegúrate de que esté por encima de otros elementos */
-}
-
-.logo img {
-    height: 30px; /* Ajusta la altura del logo */
+    background-color: transparent; /* Fondo transparente para que la imagen se vea */
+    padding: 10px; /* Espaciado interno */
 }
 
 .nav-links {
@@ -43,4 +35,14 @@
 
 .nav-links a:hover {
     color: gray; /* Cambia el color al pasar el ratón */
+}
+
+.nav-links a {
+    padding: 8px 12px; /* Agrega padding para que el fondo sea visible */
+    border-radius: 4px; /* Esquinas redondeadas */
+}
+
+.nav-links a:hover {
+    background-color: gray; /* Cambia el fondo a gris */
+    color: white; /* Cambia el texto a blanco */
 }
