@@ -1,0 +1,145 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el margen se manejen correctamente */
+}
+
+:root {
+    --font_principal: 'Poppins', sans-serif;
+    --font_secundario: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font_secundario) !important;
+}
+
+/* Contact.css */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la caja del formulario */
+    justify-content: flex-start; /* Mantiene el contenido superior alineado al inicio */
+    padding: 40px; /* Espaciado alrededor de la página */
+    max-width: 800px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5rem; /* Tamaño de fuente del título */
+    color: #333333; /* Color del título */
+    text-align: center; /* Centra el título */
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+    color: #333333; /* Color del texto (negro) */
+    text-align: left; /* Alinea el párrafo a la izquierda */
+    margin-bottom: 10px;
+    max-width: 100%; /* Asegura que los párrafos tengan el mismo ancho que el formulario */
+}
+
+.contact-container {
+    display: flex; /* Usa flexbox para alinear el formulario y la información de contacto */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    margin-top: 20px; /* Espacio superior para separar de otros elementos */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    max-width: 400px; /* Ancho máximo para el formulario */
+    background-color: #f7f7f7; /* Color de fondo del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espacio entre grupos de entrada */
+}
+
+.label {
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold; /* Texto en negrita */
+    color: #333333; /* Color del texto (negro) */
+    font-size: 1rem; /* Tamaño de fuente de la etiqueta */
+}
+
+input, textarea {
+    margin-bottom: 15px; /* Espacio debajo de los campos */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente de los campos */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+}
+
+input:focus, textarea:focus {
+    border-color: #333333; /* Cambia el color del borde al hacer foco */
+    outline: none; /* Sin contorno */
+}
+
+button {
+    padding: 12px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: black; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo */
+    font-weight: bold; /* Texto en negrita */
+}
+
+button:hover {
+    background-color: #555555; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.contact-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+    max-width: 400px; /* Ancho máximo para la información de contacto */
+    margin-left: 20px; /* Espacio a la izquierda para separar del formulario */
+}
+
+.contact-info h3 {
+    text-align: center;
+    margin-bottom: 15px; /* Espacio debajo del título de contacto */
+    color: #333333; /* Color del título de contacto (negro) */
+}
+
+.contact-info .contact-details {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.contact-info .contact-item {
+    display: flex; /* Para alinear los íconos y el texto */
+    align-items: center; /* Centra verticalmente */
+    color: #333333; /* Color del texto (negro) */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+.contact-info .contact-item a {
+    margin-left: 8px; /* Espacio a la izquierda del enlace */
+    color: black; /* Color del enlace (negro) */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición para el color */
+}
+
+.contact-info .contact-item a:hover {
+    color: gray; /* Cambia el color al pasar el mouse */
+}
+
+.note {
+    margin-top: 40px; /* Espacio superior para separar de otros elementos */
+    font-size: 0.9rem; /* Tamaño de fuente de la nota */
+    color: #666666; /* Color del texto (gris) */
+}

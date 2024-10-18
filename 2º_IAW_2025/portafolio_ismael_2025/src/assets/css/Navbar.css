@@ -6,43 +6,58 @@
 }
 
 :root {
-    --bw-filter: grayscale(100%); /* Filtro en blanco y negro */
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
 }
+body{
+    font-family: var(--font_secundario) !important;
+}
 
 .navbar {
-    position: absolute; /* Posiciona la barra de navegación de manera absoluta */
-    top: 20px; /* Distancia desde la parte superior */
-    right: 20px; /* Distancia desde la derecha */
-    z-index: 2; /* Asegúrate de que esté por encima de otros elementos */
-    background-color: transparent; /* Fondo transparente para que la imagen se vea */
-    padding: 10px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: transparent; 
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+    z-index: 1000;
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.155); /* Borde negro fino en la parte inferior */
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
 }
 
 .nav-links {
-    list-style: none; /* Sin viñetas */
-    display: flex; /* Muestra los enlaces en fila */
-    gap: 20px; /* Espacio entre los enlaces */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
 }
 
 .nav-links a {
-    text-decoration: none; /* Sin subrayado */
-    color: white; /* Color del texto */
-    font-family: var(--font_secundario); /* Fuente secundaria */
-    transition: color 0.3s; /* Transición suave para el color */
+    text-decoration: none;
+    color: black; /* Color del texto en negro */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Transiciones para color y fondo */
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative; /* Para el efecto de animación */
 }
 
 .nav-links a:hover {
-    color: gray; /* Cambia el color al pasar el ratón */
+    outline: 2px solid black; 
+    color: black; /* Cambia el color del texto a blanco */
+    border-radius: 10px; /* Esto no afecta el tamaño del botón */
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
 }
 
-.nav-links a {
-    padding: 8px 12px; /* Agrega padding para que el fondo sea visible */
-    border-radius: 4px; /* Esquinas redondeadas */
-}
-
-.nav-links a:hover {
-    background-color: gray; /* Cambia el fondo a gris */
-    color: white; /* Cambia el texto a blanco */
+.nav-links a:active {
+    color: darkgray; /* Cambia el color al hacer clic */
+    transform: scale(0.95); /* Efecto de escalado al hacer clic */
 }

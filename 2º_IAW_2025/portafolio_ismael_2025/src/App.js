@@ -1,13 +1,24 @@
 import React from 'react';
-import LandingPage from './LandingPage'; // Importar el nuevo componente
-import Proyectos from './Proyectos'; // Importar el nuevo componente
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import LandingPage from './LandingPage';
+import Proyectos from './Proyectos';
+import Newsletter from './Newsletter';
+import Contact from './Contact';
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-      <Proyectos />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/projects" element={<Proyectos />} />
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

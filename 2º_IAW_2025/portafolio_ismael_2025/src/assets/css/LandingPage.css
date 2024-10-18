@@ -6,7 +6,6 @@
 }
 
 :root {
-    --bw-filter: grayscale(100%); /* Filtro en blanco y negro */
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
 }
@@ -63,8 +62,8 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra toda el área */
-    filter: var(--bw-filter) brightness(1.0); /* Ajusta el brillo de la imagen */
-    transition: filter 0.3s ease; /* Añade una transición suave para el filtro */
+    /* filter: var(--bw-filter) brightness(1.0); /* Ajusta el brillo de la imagen */
+    /* transition: filter 0.3s ease; Añade una transición suave para el filtro */
 }
 
 .overlay {
@@ -73,7 +72,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Aumenta la opacidad para más contraste */
+    background-color: rgba(0, 0, 0, 0.362); /* Aumenta la opacidad para más contraste */
     z-index: 1; /* Asegúrate de que esté por encima de la imagen */
 }
 
@@ -85,31 +84,68 @@ body{
     font-size: 1rem;
     letter-spacing: 2px;
     color: white; /* Cambia a blanco para destacar sobre el fondo oscuro */
-    font-family: var(--font_secundario);
     z-index: 2; /* Asegúrate de que esté por encima de la superposición */
 }
 
-.social-icons {
+.copyright {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 10px; /* Espacio desde el fondo */
+    right: 10px; /* Espacio desde la derecha */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+    padding: 5px; /* Espacio interno */
+    letter-spacing: 0.5px;
+    z-index: 2; /* Asegúrate de que esté por encima de la superposición */
+}
+
+/* Iconos social {Github, Linkedin} */
+.social-container {
     display: flex;
-    gap: 15px; /* Espacio entre los iconos */
-    margin-top: 20px; /* Espacio superior */
+    justify-content: center; /* Centrar horizontalmente todo el contenido */
+}
+
+.social-icons {
+    display: flex; /* Mantener los íconos y el botón en una fila */
+    align-items: center; /* Alinear verticalmente todos los elementos */
+    gap: 10px; /* Espacio entre los íconos y el botón */
 }
 
 .social-icons a {
     font-size: 24px; /* Tamaño del icono */
     color: black; /* Color del icono */
     text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave para el color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y escala */
+    display: flex; /* Hacer que el icono se comporte como un elemento flex */
+    align-items: center; /* Alinear el icono verticalmente en el centro */
+    justify-content: center; /* Centrar horizontalmente el icono */
+    height: 100%; /* Altura deseada para los iconos */
+    width: 100%; /* Ancho fijo para los iconos, puedes ajustar esto según tu diseño */
+    border-radius: 5px; /* Bordes redondeados para una mejor apariencia */
 }
 
 .social-icons a:hover {
     color: gray; /* Color al pasar el ratón */
 }
 
+.social-icons button {
+    background: transparent; /* Botón transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    padding: 0; /* Sin padding para que no haya espacio adicional */
+    margin: 0; /* Sin margen para que no haya espacio adicional */
+    color: black; /* Color del icono */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y escala */
+}
+
+.social-icons button:hover {
+    background: transparent; /* Fondo transparente al pasar el ratón */
+    color: gray; /* Color al pasar el ratón */
+}
+
+
 /* Estilos para el Portafolio */
 .portfolio {
     padding: 40px;
-    background-color: var(--color-fondo);
 }
 
 .portfolio h1 {
@@ -117,7 +153,6 @@ body{
     margin-bottom: 30px;
     font-family: var(--font_principal);
     font-size: 3rem;
-    color: var(--color-texto);
 }
 
 .projects-grid {
@@ -151,7 +186,6 @@ body{
 .project-card h2 {
     font-family: var(--font_principal);
     font-size: 1.5rem;
-    color: var(--color-texto);
     margin: 10px 0;
 }
 
@@ -172,10 +206,6 @@ body{
     background-color: transparent; /* Fondo transparente al pasar el ratón */
     color: gray; /* Color del texto gris al pasar el ratón */
     border-color: gray; /* Color del borde gris al pasar el ratón */
-}
-
-.project-card a:hover {
-    background-color: var(--color-enlace-hover);
 }
 
 /* Media Queries para Responsividad */
