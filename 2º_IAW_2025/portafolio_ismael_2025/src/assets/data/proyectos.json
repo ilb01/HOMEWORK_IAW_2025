@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Proyecto de Página Web",
         "description": "Una página web moderna y receptiva.",
-        "image": "/assets/images/proyecto1.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+1", 
         "technologies": [
             "HTML",
             "CSS",
@@ -15,7 +15,7 @@
         "id": 2,
         "title": "Aplicación React",
         "description": "Aplicación interactiva usando React.",
-        "image": "/assets/images/proyecto2.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+2",
         "technologies": [
             "React",
             "Node.js"
@@ -26,7 +26,7 @@
         "id": 3,
         "title": "Sitio de E-commerce",
         "description": "Una plataforma de comercio electrónico completa.",
-        "image": "/assets/images/proyecto3.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+3",
         "technologies": [
             "HTML",
             "CSS",
@@ -39,7 +39,7 @@
         "id": 4,
         "title": "Juego en JavaScript",
         "description": "Un juego interactivo creado con JavaScript.",
-        "image": "/assets/images/proyecto4.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+4",
         "technologies": [
             "JavaScript",
             "HTML5"
@@ -50,7 +50,7 @@
         "id": 5,
         "title": "Blog Personal",
         "description": "Un blog para compartir pensamientos y experiencias.",
-        "image": "/assets/images/proyecto5.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+5",
         "technologies": [
             "React",
             "CSS"
@@ -61,7 +61,7 @@
         "id": 6,
         "title": "Aplicación Móvil con React Native",
         "description": "Aplicación móvil multiplataforma usando React Native.",
-        "image": "/assets/images/proyecto6.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+6",
         "technologies": [
             "React Native",
             "Firebase"
@@ -72,7 +72,7 @@
         "id": 7,
         "title": "Sistema de Gestión de Tareas",
         "description": "Una aplicación para gestionar tareas y proyectos.",
-        "image": "/assets/images/proyecto7.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+7",
         "technologies": [
             "Vue.js",
             "Node.js"
@@ -83,7 +83,7 @@
         "id": 8,
         "title": "Portafolio Personal",
         "description": "Un portafolio para mostrar proyectos y habilidades.",
-        "image": "/assets/images/proyecto8.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+8",
         "technologies": [
             "HTML",
             "CSS",
@@ -95,7 +95,7 @@
         "id": 9,
         "title": "Dashboard de Datos",
         "description": "Un tablero interactivo para visualización de datos.",
-        "image": "/assets/images/proyecto9.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+9",
         "technologies": [
             "React",
             "D3.js"
@@ -106,7 +106,7 @@
         "id": 10,
         "title": "Chat en Tiempo Real",
         "description": "Una aplicación de chat usando WebSocket.",
-        "image": "/assets/images/proyecto10.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+10",
         "technologies": [
             "Node.js",
             "Socket.io"
@@ -117,7 +117,7 @@
         "id": 11,
         "title": "Clon de Twitter",
         "description": "Un clon simple de la red social Twitter.",
-        "image": "/assets/images/proyecto11.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+11",
         "technologies": [
             "React",
             "Firebase"
@@ -128,7 +128,7 @@
         "id": 12,
         "title": "Sistema de Reservas",
         "description": "Una aplicación para gestionar reservas de eventos.",
-        "image": "/assets/images/proyecto12.jpg",
+        "image": "https://via.placeholder.com/400x300?text=Proyecto+12",
         "technologies": [
             "Angular",
             "Node.js"
@@ -136,3 +136,4 @@
         "url": "https://enlace-al-proyecto12.com"
     }
 ]
+

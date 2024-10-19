@@ -1,26 +1,26 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'; // Importa los íconos deseados
-import './assets/css/LandingPage.css'; // Enlaza con el archivo CSS
-import foto from './assets/images/foto.jpg'; // Asegúrate de que la ruta sea correcta
+import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'; // Import desired icons
+import './assets/css/LandingPage.css'; // Link to the CSS file
+import photo from './assets/images/foto.jpg'; // Ensure the path is correct
 
 function LandingPage() {
     const handleDownload = () => {
-        const pdfUrl = require('./pdf/cv_ismael.pdf'); // Ruta al PDF
-        const link = document.createElement('a'); // Crear un elemento <a>
-        link.href = pdfUrl; // Establecer la URL del PDF
-        link.download = 'cv_ismael.pdf'; // Establecer el nombre del archivo
-        document.body.appendChild(link); // Añadir el <a> al DOM
-        link.click(); // Simular el clic en el enlace
-        document.body.removeChild(link); // Remover el <a> del DOM
+        const pdfUrl = require('./pdf/cv_ismael.pdf'); // Path to the PDF
+        const link = document.createElement('a'); // Create an <a> element
+        link.href = pdfUrl; // Set the PDF URL
+        link.download = 'cv_ismael.pdf'; // Set the file name
+        document.body.appendChild(link); // Append the <a> to the DOM
+        link.click(); // Simulate a click on the link
+        document.body.removeChild(link); // Remove the <a> from the DOM
     };
 
     return (
         <div className="landing-page">
             <div className="text-section">
-                <h2>DISEÑADOR FRONTEND EN FORMACIÓN</h2>
+                <h2>FRONTEND DESIGNER</h2>
                 <h1>ISMAEL LOZANO</h1>
                 <p className="about-me">
-                    Soy un diseñador frontend en formación, especializado en HTML, CSS y JavaScript. Me apasiona crear experiencias web atractivas y funcionales, utilizando tecnologías modernas y mejores prácticas de diseño. Siempre busco aprender y crecer profesionalmente.
+                    I am a frontend designer in training, specializing in HTML, CSS, and JavaScript. I am passionate about creating attractive and functional web experiences using modern technologies and best design practices. I always seek to learn and grow professionally.
                 </p>
                 <div className="social-container">
                     <div className="social-icons">
@@ -39,10 +39,10 @@ function LandingPage() {
             </div>
 
             <div className="image-section">
-                <img src={foto} alt="Ismael Lozano" />
-                <div className="overlay"></div> {/* Superposición oscura */}
-                <div className="vertical-text">PORTAFOLIO</div>
-                <div className="copyright">© 2024 Ismael Lozano</div> {/* Añadido copyright */}
+                <img src={photo} alt="Ismael Lozano" />
+                <div className="overlay"></div> {/* Dark overlay */}
+                <div className="vertical-text">PORTFOLIO</div>
+                <div className="copyright">© 2024 Ismael Lozano</div> {/* Added copyright */}
             </div>
         </div>
     );

@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_principal: 'Poppins', sans-serif;
+    --font_secundario: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font_secundario);
+}
+
+/* Styles for Projects */
+.projects {
+    padding: 40px;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--font_principal);
+    font-size: 2.5rem; /* Adjust size */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 20px; /* Space between project cards */
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added shadow */
+    cursor: pointer;
+    height: 350px; /* Adjust card height */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Smooth zoom on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%; /* Ensure image covers entire card */
+    object-fit: cover; /* Ensure image doesn't deform */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1); /* Zoom image on hover */
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85); /* Darker overlay */
+    color: white; /* White text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.project-overlay h2 {
+    font-family: var(--font_principal);
+    font-size: 1.4rem; /* Larger title */
+    margin-bottom: 5px;
+    color: white; /* Ensure title is white */
+}
+
+.project-overlay p {
+    font-size: 1rem; /* Slightly larger description */
+    margin-bottom: 10px;
+    color: white; /* Ensure description is white */
+}
+
+.technologies .tech-badge {
+    display: inline-block;
+    margin: 3px;
+    padding: 5px 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent badge */
+    border-radius: 5px;
+    font-size: 0.85rem; /* Badge size */
+    color: white; /* Ensure technology badges are white */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.project-overlay a {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    margin: 10px 10px; /* Horizontal space between buttons */
+    padding: 8px 12px;
+    background-color: transparent; /* No background */
+    border: 2px solid white; /* White border */
+    color: white; /* White text */
+    text-decoration: none; /* No underline */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.project-overlay a:hover {
+    background-color: white; /* Background turns white on hover */
+    color: rgba(0, 0, 0, 0.57); /* Text color changes on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}

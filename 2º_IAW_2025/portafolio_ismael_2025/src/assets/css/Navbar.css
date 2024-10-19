@@ -2,14 +2,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura que el padding y el margen se manejen correctamente */
+    box-sizing: border-box;
+    /* Asegura que el padding y el margen se manejen correctamente */
 }
 
 :root {
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
 }
-body{
+
+body {
     font-family: var(--font_secundario) !important;
 }
 
@@ -18,11 +20,13 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 8px 15px;
-    background-color: transparent; 
+    background-color: transparent;
     width: 100%;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efecto de transición */
     z-index: 1000;
-    border-bottom: 0.2px solid rgba(0, 0, 0, 0.155); /* Borde negro fino en la parte inferior */
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
+    /* Borde negro fino en la parte inferior */
 }
 
 .logo img {
@@ -42,22 +46,53 @@ body{
 
 .nav-links a {
     text-decoration: none;
-    color: black; /* Color del texto en negro */
-    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Transiciones para color y fondo */
+    color: black;
+    /* Color del texto en negro */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    /* Transiciones para color y fondo */
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
-    position: relative; /* Para el efecto de animación */
+    position: relative;
+    /* Para el efecto de animación */
 }
 
 .nav-links a:hover {
-    outline: 2px solid black; 
-    color: black; /* Cambia el color del texto a blanco */
-    border-radius: 10px; /* Esto no afecta el tamaño del botón */
-    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+    outline: 2px solid black;
+    color: black;
+    /* Cambia el color del texto a blanco */
+    border-radius: 10px;
+    /* Esto no afecta el tamaño del botón */
+    transform: scale(1.05);
+    /* Efecto de escalado al pasar el mouse */
 }
 
 .nav-links a:active {
-    color: darkgray; /* Cambia el color al hacer clic */
-    transform: scale(0.95); /* Efecto de escalado al hacer clic */
+    color: darkgray;
+    /* Cambia el color al hacer clic */
+    transform: scale(0.95);
+    /* Efecto de escalado al hacer clic */
+}
+
+.nav-links li:last-child a {
+    background-color: black;
+    /* Fondo negro */
+    color: white;
+    /* Texto blanco */
+    border-radius: 10px;
+    /* Borde redondeado */
+    padding: 10px 20px;
+    /* Ajusta el padding si lo deseas */
+    outline: 2px solid transparent;
+    /* Outline transparente por defecto */
+}
+
+.nav-links li:last-child a:hover {
+    outline: 2px solid black;
+    background-color: transparent;
+    color: black;
+    /* Cambia el color del texto a blanco */
+    border-radius: 10px;
+    /* Esto no afecta el tamaño del botón */
+
 }
