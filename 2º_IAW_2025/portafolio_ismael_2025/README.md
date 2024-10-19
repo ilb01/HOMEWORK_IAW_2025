@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Portafolio Ismael
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto de portafolio personal creado con React. A continuación, se detallan los pasos necesarios para configurar y ejecutar el proyecto en tu máquina local.
 
-## Available Scripts
+## Requisitos Previos
 
-In the project directory, you can run:
+Antes de comenzar, asegúrate de tener instalado Visual Studio Code en tu máquina.
 
-### `npm start`
+Debes instalar un gestor de versiones de Node, NPM y Node.js. Aquí tienes algunas guías:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Para Windows, descarga NVM desde la [página de lanzamientos de GitHub](https://github.com/coreybutler/nvm-windows/releases/) "nvm-setup.exe".
+- Consulta la [guía para descargar e instalar Node.js y NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) en el sitio oficial.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Después de instalar NVM, puedes instalar diferentes versiones de Node.js usando los siguientes pasos:
 
-### `npm test`
+1. Para instalar las versiones 20, 18 y 16.13.0, ejecuta los siguientes comandos:
+   - `nvm install 20`
+   - `nvm install 18`
+   - `nvm install 16.13.0`
+  
+2. Para usar una versión específica, ejecuta:
+   - `nvm use 18`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Para encontrar las versiones que tienes instaladas, utiliza:
+   - `nvm ls`
 
-### `npm run build`
+4. Para ver qué versión estás utilizando actualmente, ejecuta:
+   - `nvm current`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pasos para Crear el Proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Crear la aplicación de React**:
+   - Abre tu terminal o consola de comandos.
+   - Escribe el siguiente comando para crear una nueva aplicación de React llamada `portafolio_ismael`:
+     ```
+     npx create-react-app portafolio_ismael
+     ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Acceder al directorio del proyecto**:
+   - Después de que la creación de la aplicación se complete, navega al directorio del proyecto ejecutando:
+     ```
+     cd portafolio_ismael
+     ```
 
-### `npm run eject`
+3. **Instalación de dependencias**:
+   - Para instalar las dependencias necesarias, asegúrate de ejecutar el siguiente comando:
+     ```
+     npm install
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Iniciar el servidor de desarrollo**:
+   - Una vez dentro del directorio, inicia el servidor de desarrollo para ver tu aplicación en el navegador. Escribe el siguiente comando:
+     ```
+     npm start
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Instalación de Dependencias Adicionales
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para enriquecer tu proyecto, considera instalar las siguientes bibliotecas:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React Router**:
+  - Para habilitar la navegación entre diferentes páginas (como Landing Page, Portafolio, Contacto, etc.), instala React Router ejecutando:
+    ```
+    npm install react-router-dom
+    ```
 
-## Learn More
+- **React Icons**:
+  - Para incorporar iconos en tu proyecto, instala la biblioteca de iconos con el siguiente comando:
+    ```
+    npm install react-icons
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Descargar y abrir archivos PDF**:
+  - Si deseas manejar archivos PDF en tu proyecto, instala las siguientes bibliotecas:
+    ```
+    npm install react-native-fs react-native-file-viewer
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Comandos Adicionales
 
-### Code Splitting
+- **Ejecutar pruebas**:
+  - Para ejecutar las pruebas de tu aplicación, usa el siguiente comando:
+    ```
+    npm test
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Crear una versión optimizada para producción**:
+  - Para construir la aplicación para producción, utiliza:
+    ```
+    npm run build
+    ```
 
-### Analyzing the Bundle Size
+- **Eyectar la configuración de Create React App**:
+  - Si necesitas tener control completo sobre la configuración de webpack, puedes eyectar el proyecto con:
+    ```
+    npm run eject
+    ```
+  - Ten en cuenta que este comando es irreversible.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Estructura del Proyecto
 
-### Making a Progressive Web App
+Una vez que hayas configurado el proyecto, la estructura de carpetas y archivos debería verse similar a esta:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- ULTIMO -->
 
-### Advanced Configuration
+### Descripción de las Carpetas:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- - `node_modules/`: Contiene todas las dependencias instaladas.
+- `public/`: Archivos públicos que se servirán directamente.
+- `src/`: Aquí es donde se encuentra el código fuente de tu aplicación.
+  - `assets/`: Recursos como imágenes y archivos estáticos.
+  - `components/`: Componentes reutilizables de tu aplicación.
+  - `pages/`: Diferentes páginas que componen tu portafolio.
+  - `App.js`: Componente principal de la aplicación.
+  - `index.js`: Punto de entrada de tu aplicación. -->
 
-### Deployment
+## Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar un pull request. Todas las contribuciones son bienvenidas.
 
-### `npm run build` fails to minify
+## Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia MIT.
