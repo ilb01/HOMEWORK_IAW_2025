@@ -36,7 +36,6 @@ const Newsletter = () => {
                 <p className="success-message">Thank you for subscribing! Check your email for more details.</p>
             ) : (
                 <form onSubmit={handleSubscribe} className="form-animation">
-                    <label htmlFor="email" className="visually-hidden">Email</label>
                     <input
                         type="email"
                         id="email"
@@ -95,10 +94,10 @@ const Newsletter = () => {
                     <a href="/">Back to Home</a>
                 </div>
                 <div className="unsubscribe">
-                    <a href="/unsubscribe">Unsubscribe</a>
+                    <a href="/">Unsubscribe</a>
                 </div>
                 <div className="manage-preferences">
-                    <a href="/manage-preferences">Manage Preferences</a>
+                    <a href="/">Manage Preferences</a>
                 </div>
             </div>
         </div>
