@@ -1,0 +1,110 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_principal: 'Poppins', sans-serif;
+    --font_secundario: 'Montserrat', sans-serif;
+    --primary-color: #FF5722; /* Color para los íconos */
+    --text-color: black;
+    --background-color: transparent;
+}
+
+body {
+    font-family: var(--font_secundario) !important;
+    background-color: #f4f4f4; /* Fondo general claro */
+    color: var(--text-color);
+}
+
+/* About.css */
+.about {
+    padding: 40px;
+    background: var(--background-color);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; /* Alinea el contenido en el centro */
+    color: var(--text-color);
+}
+
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: var(--font_principal);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Alinea el texto en ambos lados para una mejor lectura */
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin-top: 30px;
+    font-family: var(--font_principal);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid; /* Cambia a grid */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ajuste para columnas más grandes */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    gap: 10px; /* Aumenta el espacio entre ícono y texto */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    padding: 15px 25px; /* Aumenta el padding */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición para transformación y opacidad */
+    position: relative; /* Necesario para el efecto de giro */
+}
+
+/* Nueva animación al pasar el ratón */
+.skills-list li:hover {
+    transform: perspective(1000px) rotateY(10deg) scale(1.05); /* Giro y escalado al pasar el ratón */
+    opacity: 1; /* Aumenta la opacidad al pasar el ratón */
+}
+
+/* Añadir una sombra sutil */
+.skills-list li:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Añade sombra suave al hover */
+}
+
+.icon {
+    font-size: 2.5rem; /* Ajusta el tamaño de los íconos aquí */
+    color: var(--primary-color); /* Color para los íconos */
+}
+
+.about-conclusion {
+    font-size: 1rem;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description, .about-conclusion {
+        font-size: 1rem;
+    }
+
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Una columna en pantallas pequeñas */
+    }
+}

@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Asegura que el padding y el margen se manejen correctamente */
 }
 
+/* Root */
 :root {
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
@@ -15,6 +15,7 @@ body {
     font-family: var(--font_secundario) !important;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,10 +24,9 @@ body {
     background-color: transparent;
     width: 100%;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Efecto de transición */
-    z-index: 1000;
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima */
     border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
-    /* Borde negro fino en la parte inferior */
+    position: relative; /* Necesario para el control de z-index */
 }
 
 .logo img {
@@ -34,10 +34,42 @@ body {
     height: auto;
 }
 
+/* Botón hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2001; /* Asegura que el botón hamburguesa esté por encima */
+    position: relative; /* Control de z-index */
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Enlaces del menú */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    z-index: 2000; /* Asegura que los enlaces del menú estén visibles */
+    position: relative;
 }
 
 .nav-links li {
@@ -47,52 +79,58 @@ body {
 .nav-links a {
     text-decoration: none;
     color: black;
-    /* Color del texto en negro */
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-    /* Transiciones para color y fondo */
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: bold;
-    position: relative;
-    /* Para el efecto de animación */
 }
 
 .nav-links a:hover {
     outline: 2px solid black;
     color: black;
-    /* Cambia el color del texto a blanco */
     border-radius: 10px;
-    /* Esto no afecta el tamaño del botón */
     transform: scale(1.05);
-    /* Efecto de escalado al pasar el mouse */
 }
 
-.nav-links a:active {
-    color: darkgray;
-    /* Cambia el color al hacer clic */
-    transform: scale(0.95);
-    /* Efecto de escalado al hacer clic */
-}
-
-.nav-links li:last-child a {
-    background-color: black;
-    /* Fondo negro */
+.nav-links a.active {
     color: white;
-    /* Texto blanco */
+    background-color: black;
+    outline: 2px solid black;
     border-radius: 10px;
-    /* Borde redondeado */
-    padding: 10px 20px;
-    /* Ajusta el padding si lo deseas */
-    outline: 2px solid transparent;
-    /* Outline transparente por defecto */
 }
 
-.nav-links li:last-child a:hover {
-    outline: 2px solid black;
-    background-color: transparent;
-    color: black;
-    /* Cambia el color del texto a blanco */
-    border-radius: 10px;
-    /* Esto no afecta el tamaño del botón */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Muestra el botón hamburguesa en pantallas pequeñas */
+    }
 
+    .nav-links {
+        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        height: 100vh; /* El menú ocupa toda la altura de la pantalla */
+        text-align: center; /* Centra el texto */
+        padding: 20px;
+        z-index: 2000; /* Asegura que el menú esté visible */
+        justify-content: center; /* Centra verticalmente los enlaces */
+    }
+
+    .nav-links.active {
+        display: flex; /* Muestra el menú al hacer clic en el hamburguesa */
+    }
+
+    .nav-links li {
+        margin: 20px 0; /* Añade espacio entre los enlaces */
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-radius: 0;
+        font-size: 1.5rem; /* Aumenta el tamaño de la fuente para mejor visibilidad */
+    }
 }

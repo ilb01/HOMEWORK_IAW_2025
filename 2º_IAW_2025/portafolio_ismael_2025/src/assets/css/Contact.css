@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center; /* Centra la caja del formulario */
     justify-content: flex-start; /* Mantiene el contenido superior alineado al inicio */
-    padding: 50px; /* Espaciado alrededor de la página */
+    padding: 40px; /* Espaciado alrededor de la página */
     max-width: 900px; /* Ancho máximo para el contenedor */
     margin: 0 auto; /* Centra el contenedor en la página */
     text-align: left; /* Alinea el texto a la izquierda */

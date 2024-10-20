@@ -26,7 +26,7 @@ function Project() {
                                     <FaGithub />
                                 </a>
                                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="button">
-                                    <FaExternalLinkAlt /> View Project
+                                    <FaExternalLinkAlt /> 
                                 </a>
                             </div>
                         </div>

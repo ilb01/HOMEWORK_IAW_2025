@@ -9,9 +9,11 @@
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
 }
-body{
+
+body {
     font-family: var(--font_secundario) !important;
 }
+
 /* Estilos para la Landing Page */
 .landing-page {
     display: flex;
@@ -26,7 +28,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding:35px;
+    padding: 35px;
 }
 
 .text-section h1 {
@@ -63,8 +65,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Asegura que la imagen cubra toda el área */
-    /* filter: var(--bw-filter) brightness(1.0); /* Ajusta el brillo de la imagen */
-    /* transition: filter 0.3s ease; Añade una transición suave para el filtro */
 }
 
 .overlay {
@@ -73,7 +73,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.362); /* Aumenta la opacidad para más contraste */
+    background-color: rgba(0, 0, 0, 0.449); /* Aumenta la opacidad para más contraste */
     z-index: 1; /* Asegúrate de que esté por encima de la imagen */
 }
 
@@ -82,7 +82,7 @@ body{
     top: 50%;
     right: -20px;
     transform: rotate(90deg);
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     color: white; /* Cambia a blanco para destacar sobre el fondo oscuro */
     z-index: 2; /* Asegúrate de que esté por encima de la superposición */
@@ -93,13 +93,13 @@ body{
     bottom: 10px; /* Espacio desde el fondo */
     right: 10px; /* Espacio desde la derecha */
     color: white; /* Color del texto */
-    font-size: 14px; /* Tamaño de fuente */
+    font-size: 0.7rem; /* Tamaño de fuente */
     padding: 5px; /* Espacio interno */
     letter-spacing: 0.5px;
     z-index: 2; /* Asegúrate de que esté por encima de la superposición */
 }
 
-/* Iconos social {Github, Linkedin} */
+/* Iconos social {Github, Linkedin, Download} */
 .social-container {
     display: flex;
     justify-content: center; /* Centrar horizontalmente todo el contenido */
@@ -136,12 +136,14 @@ body{
     margin: 0; /* Sin margen para que no haya espacio adicional */
     width: 50px;
     color: black; /* Color del icono */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y escala */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para el color y escala */
+    font-size: 25px; /* Aumenta el tamaño del icono aquí */
 }
 
 .social-icons button:hover {
     background: transparent; /* Fondo transparente al pasar el ratón */
     color: gray; /* Color al pasar el ratón */
+    transition: transform 0.2s ease, color 0.2s ease; /* Transición modificada para hover */
+    transform: translateY(-5px) scale(1.1); /* Eleva y escala el botón al pasar el ratón */
 }
-
 

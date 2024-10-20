@@ -1,32 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './assets/css/Navbar.css'; // Asegúrate de tener el archivo CSS
+import './assets/css/Navbar.css';
 
 function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <nav className="navbar">
             <div className="logo">
                 <img src={`${process.env.PUBLIC_URL}/logo_ilb.png`} alt="Logo" />
             </div>
-            <ul className="nav-links">
+            {/* Botón hamburguesa */}
+            <div className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu} aria-label="Toggle menu">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
+            {/* Menú de enlaces */}
+            <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
                 <li>
-                    <NavLink exact to="/" activeClassName="active">
+                    <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
                         HOME
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" activeClassName="active">
+                    <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
+                        ABOUT ME
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/projects" className={({ isActive }) => (isActive ? "active" : "")}>
                         PROJECTS
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/newsletter" activeClassName="active">
+                    <NavLink to="/newsletter" className={({ isActive }) => (isActive ? "active" : "")}>
                         NEWSLETTER
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" activeClassName="active">
-                        CONTACTO
+                    <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
+                        CONTACT
                     </NavLink>
                 </li>
             </ul>
