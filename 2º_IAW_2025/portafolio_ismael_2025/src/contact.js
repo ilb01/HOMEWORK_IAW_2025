@@ -6,30 +6,26 @@ function Contact() {
     return (
         <div className="contact-page">
             <h2 className="contact-title">Contact</h2>
-            <p className="contact-description">
-                If you have any questions, comments, or concerns, feel free to reach out to me. I'm here to assist you. Fill out the form below, and I'll do my best to get back to you within 24-48 hours.
-                Please make sure to provide accurate information, especially your email address, so I can respond to you without issues. Thank you for your interest!
-            </p>
             <div className="contact-container">
                 <form className="contact-form">
                     <div className="input-group">
                         <label htmlFor="name">Full Name*</label>
-                        <input type="text" id="name" name="name" required placeholder='' />
+                        <input type="text" id="name" name="name" required placeholder='What is your full name?' />
                     </div>
                     
                     <div className="input-group">
                         <label htmlFor="email">Email Address*</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required placeholder='What is your email address?' />
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="subject">Subject*</label>
-                        <input type="text" id="subject" name="subject" required placeholder='' />
+                        <input type="text" id="subject" name="subject" required placeholder='What would you like to discuss?' />
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="message">Message*</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <textarea id="message" name="message" rows="4" required placeholder='What is your message?' ></textarea>
                     </div>
 
                     <button className='message' type="submit">Send Message</button>
@@ -57,6 +53,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-

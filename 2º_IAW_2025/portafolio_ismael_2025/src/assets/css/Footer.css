@@ -1,0 +1,21 @@
+.footer {
+    background-color: white; /* Cambia el fondo a blanco */
+    color: #333; /* Cambia el color del texto a oscuro para contraste */
+    padding: 20px;
+    text-align: center; /* Centra el texto */
+}
+
+.footer-content {
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin: 10px 0; /* Añade un margen vertical para separar los íconos del texto */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaciado entre los íconos */
+    color: #333; /* Cambia el color de los íconos para que coincidan con el texto */
+    font-size: 24px; /* Tamaño de los íconos */
+    text-decoration: none; /* Elimina el subrayado */
+}

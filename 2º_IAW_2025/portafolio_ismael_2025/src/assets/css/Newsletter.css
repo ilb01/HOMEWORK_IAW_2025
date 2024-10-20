@@ -1,0 +1,233 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_principal: 'Poppins', sans-serif;
+    --font_secundario: 'Montserrat', sans-serif;
+    --primary-color: #000000; /* Black color */
+    --primary-hover-color: #808080; /* Gray on hover */
+    --error-color: #e63946;
+    --success-color: #28a745;
+    --light-background: #f9f9f9;
+    --light-text: #333333;
+}
+
+body {
+    font-family: var(--font_secundario);
+    background-color: #f0f0f0; /* Page background */
+    color: var(--light-text);
+}
+
+/* Newsletter Container */
+.newsletter-container {
+    background-color: var(--light-background);
+    color: var(--light-text);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.newsletter-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-container h2 {
+    margin-bottom: 20px;
+    font-family: var(--font_principal);
+    font-size: 2.5rem;
+}
+
+/* Description and Benefits */
+.newsletter-description p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-description ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.newsletter-description ul li {
+    margin-bottom: 10px;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+    background-color: var(--primary-color); /* Black background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded borders */
+    margin-top: 10px;
+    padding: 15px 35px; /* Padding */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transitions */
+}
+
+.subscribe-button:hover {
+    background-color: var(--primary-hover-color); /* Gray background on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Featured Articles */
+.featured-articles {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.featured-articles h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.featured-articles .article {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.featured-articles .article:hover {
+    transform: translateY(-3px);
+}
+
+.featured-articles .article h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.featured-articles .article p {
+    font-size: 1rem;
+}
+
+.featured-articles .article a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.featured-articles .article a:hover {
+    color: var(--primary-hover-color);
+}
+
+/* Testimonials */
+.testimonials {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.testimonials h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.testimonials .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Project Gallery */
+.project-gallery {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.project-gallery h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.project-gallery .project {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.project-gallery .project:hover {
+    transform: translateY(-3px);
+}
+
+.project-gallery .project h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.project-gallery .project p {
+    font-size: 1rem;
+}
+
+/* Social Media Buttons (LinkedIn, GitHub) */
+.social-media-links h4 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.social-media-links button {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color); /* Black color */
+    transition: color 0.3s, transform 0.2s;
+}
+
+.social-media-links button:hover {
+    color: var(--primary-hover-color); /* Gray on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Links for Back, Unsubscribe, and Manage Preferences */
+.links-container {
+    display: flex;
+    justify-content: center; /* Center the links */
+    margin-top: 30px; /* Space above the links */
+}
+
+.links-container div {
+    margin: 0 15px; /* Space between the links */
+}
+
+.links-container a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color); /* Black color */
+    transition: color 0.3s;
+}
+
+.links-container a:hover {
+    color: var(--primary-hover-color); /* Gray on hover */
+}
+
+/* Back to Home Link */
+.back-to-home {
+    margin-top: 30px;
+}
+
+.back-to-home a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color); /* Black color */
+    transition: color 0.3s;
+}
+
+.back-to-home a:hover {
+    color: var(--primary-hover-color); /* Gray on hover */
+}

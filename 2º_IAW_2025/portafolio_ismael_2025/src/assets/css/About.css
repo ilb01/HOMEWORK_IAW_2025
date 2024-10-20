@@ -9,24 +9,22 @@
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
     --primary-color: #FF5722; /* Color para los íconos */
-    --text-color: black;
-    --background-color: transparent;
 }
 
 body {
     font-family: var(--font_secundario) !important;
-    background-color: #f4f4f4; /* Fondo general claro */
-    color: var(--text-color);
+    background-color: white; /* Fondo general claro */
+    color:black;
 }
 
 /* About.css */
 .about {
     padding: 40px;
-    background: var(--background-color);
+    background-color: white;
     max-width: 900px;
     margin: 0 auto;
     text-align: center; /* Alinea el contenido en el centro */
-    color: var(--text-color);
+    color:black;
 }
 
 .about-title {
@@ -42,13 +40,13 @@ body {
     text-align: justify; /* Alinea el texto en ambos lados para una mejor lectura */
 }
 
-.skills-title {
+.tech-title {
     font-size: 2rem;
     margin-top: 30px;
     font-family: var(--font_principal);
 }
 
-.skills-list {
+.tech-list {
     list-style: none;
     padding: 0;
     display: grid; /* Cambia a grid */
@@ -57,7 +55,7 @@ body {
     margin-top: 20px;
 }
 
-.skills-list li {
+.tech-list li {
     font-size: 1.5rem; /* Aumenta el tamaño del texto */
     display: flex;
     align-items: center;
@@ -72,13 +70,13 @@ body {
 }
 
 /* Nueva animación al pasar el ratón */
-.skills-list li:hover {
+.tech-list li:hover {
     transform: perspective(1000px) rotateY(10deg) scale(1.05); /* Giro y escalado al pasar el ratón */
     opacity: 1; /* Aumenta la opacidad al pasar el ratón */
 }
 
 /* Añadir una sombra sutil */
-.skills-list li:hover {
+.tech-list li:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Añade sombra suave al hover */
 }
 
@@ -88,7 +86,7 @@ body {
 }
 
 .about-conclusion {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 30px;
     font-style: italic;
 }
@@ -103,7 +101,7 @@ body {
         font-size: 1rem;
     }
 
-    .skills-list {
+    .tech-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Una columna en pantallas pequeñas */
     }

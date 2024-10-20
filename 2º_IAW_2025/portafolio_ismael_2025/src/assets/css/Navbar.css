@@ -21,9 +21,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 15px;
-    background-color: transparent;
+    background-color: white;
     width: 100%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 1000; /* Asegura que la barra de navegación esté por encima */
     border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
     position: relative; /* Necesario para el control de z-index */
