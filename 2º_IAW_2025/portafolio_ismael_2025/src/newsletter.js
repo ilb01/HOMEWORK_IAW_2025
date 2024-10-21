@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import FaEnvelope
 import './assets/css/Newsletter.css';
 
 const Newsletter = () => {
@@ -25,7 +25,7 @@ const Newsletter = () => {
             <div className="newsletter-description">
                 <p>Get updates on my latest projects and publications related to frontend development, tool analysis, and more.</p>
                 <ul>
-                    <li>🔥 Tutorials on React, Vue, and other frameworks</li>
+                    <li>🔥 Tutorials on JavaScript, React, and other frameworks</li>
                     <li>🔥 Best practices in web development</li>
                     <li>🔥 Reviews of frontend tools and libraries</li>
                     <li>🔥 News about my projects on GitHub</li>
@@ -49,13 +49,12 @@ const Newsletter = () => {
                         className="input-animation"
                     />
                     <button type="submit" className="subscribe-button">Subscribe</button>
-                    {error && <p className="error-message">{error}</p>}
                 </form>
             )}
 
             <div className="featured-articles">
                 <h3>Featured Articles</h3>
-                <Article title="🚀 Best Practices in React 2024" description="Explore new trends and advanced techniques in React to optimize performance and user experience."/>
+                <Article title="🚀 Best Practices in React 2024" description="Explore new trends and advanced techniques in React to optimize performance and user experience." />
                 <Article title="⚡ Web Performance: Key to Improve Speed" description="Discover how to optimize your site's loading speed using the most modern tools in the frontend ecosystem." />
                 <Article title="🎨 UI/UX: Tips for Attractive Interfaces" description="How to design interfaces that captivate users by applying solid principles of user-centered design." />
             </div>
@@ -86,12 +85,22 @@ const Newsletter = () => {
                 >
                     <FaGithub />
                 </button>
+                <button
+                    aria-label="Email"
+                    onClick={() => {
+                        alert("El correo es este ilb01@iesemilidarder.com");
+                    }}
+                >
+                    <FaEnvelope /> {/* Ícono de correo */}
+                </button>
+
             </div>
+            <div className='copyright-footer'>© 2024 Ismael Lozano. All rights reserved.</div>
 
             {/* Links container for Back, Unsubscribe, and Manage Preferences */}
             <div className="links-container">
                 <div className="back-to-home">
-                    <a href="/">Back to Home</a>
+                    <a href="/">Visit to Home</a>
                 </div>
                 <div className="unsubscribe">
                     <a href="/">Unsubscribe</a>

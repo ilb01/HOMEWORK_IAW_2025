@@ -8,9 +8,7 @@
 :root {
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
-    --primary-color: #000000; /* Black color */
     --primary-hover-color: #808080; /* Gray on hover */
-    --error-color: #e63946;
     --success-color: #28a745;
     --light-background: #f9f9f9;
     --light-text: #333333;
@@ -30,13 +28,17 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width: 600px;
     margin: 50px auto;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.success-message{
+    padding-top: 10px;
+    text-align: center;
+    color: var(--success-color);
 }
 
 .newsletter-container:hover {
-    transform: scale(1.02);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -64,7 +66,7 @@ body {
 
 /* Subscribe Button */
 .subscribe-button {
-    background-color: var(--primary-color); /* Black background */
+    background-color: black; /* Black background */
     color: #ffffff; /* White text */
     border: none;
     border-radius: 5px; /* Rounded borders */
@@ -110,7 +112,7 @@ body {
 }
 
 .featured-articles .article a {
-    color: var(--primary-color);
+    color: black;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
@@ -175,17 +177,17 @@ body {
 
 /* Social Media Buttons (LinkedIn, GitHub) */
 .social-media-links h4 {
-    margin-top: 30px;
+    margin: 20 20px;
     font-size: 1.5rem;
 }
 
 .social-media-links button {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 0 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: var(--primary-color); /* Black color */
+    color: black; /* Black color */
     transition: color 0.3s, transform 0.2s;
 }
 
@@ -194,40 +196,33 @@ body {
     transform: scale(1.1); /* Scale effect on hover */
 }
 
-/* Links for Back, Unsubscribe, and Manage Preferences */
+/* Copyright Footer */
+.copyright-footer {
+    color: rgb(144, 141, 141);
+    font-size: 12px; /* Aumenté el tamaño del texto */
+    margin-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centrando el texto */
+}
+
+/* Links Container */
 .links-container {
     display: flex;
     justify-content: center; /* Center the links */
-    margin-top: 30px; /* Space above the links */
+    margin-top: 10px; /* Espacio sobre los enlaces */
 }
 
 .links-container div {
-    margin: 0 15px; /* Space between the links */
+    margin: 0 15px; /* Espacio entre los enlaces */
 }
 
 .links-container a {
     text-decoration: none;
-    font-size: 1rem;
-    color: var(--primary-color); /* Black color */
+    font-size: 0.9rem; /* Ajusté el tamaño del texto */
+    font-weight: bold;
+    color: black; /* Color negro */
     transition: color 0.3s;
 }
 
 .links-container a:hover {
-    color: var(--primary-hover-color); /* Gray on hover */
-}
-
-/* Back to Home Link */
-.back-to-home {
-    margin-top: 30px;
-}
-
-.back-to-home a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--primary-color); /* Black color */
-    transition: color 0.3s;
-}
-
-.back-to-home a:hover {
     color: var(--primary-hover-color); /* Gray on hover */
 }
