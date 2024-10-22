@@ -177,6 +177,6 @@ body {
     }
 
     .tech-list {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+        grid-template-columns: repeat(3, 1fr); /* Dos columnas en pantallas pequeñas */
     }
 }
