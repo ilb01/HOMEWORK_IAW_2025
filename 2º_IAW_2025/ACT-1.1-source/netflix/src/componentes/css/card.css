@@ -134,12 +134,12 @@
 
 .card .tooltip:hover .tooltiptext {
     display: block;
-    border: 1px solid #FFFF37;   
+    border: 1px solid #FFFF37;
 }
 
 .score {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
     padding: 0.2rem 0;
@@ -152,8 +152,7 @@
     background-color: yellow;
     clip-path: polygon(50% 0%, 70% 25%, 98% 35%, 78% 63%, 79% 91%, 50% 76%, 21% 91%, 21% 62%, 2% 35%, 32% 24%);
 }
+
 .star-off {
-    
     background-color: #ccc;
-  
 }

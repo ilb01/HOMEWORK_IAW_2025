@@ -2,7 +2,7 @@ import React from 'react';
 import { MdAddCircle } from 'react-icons/md';
 import { seriesList } from './data/series-static';
 
-const Netflix = ({ id, title, img, year, pegi, matching, seasons, desc, type, episodes }) => {
+const Netflix = ({ id, title, img, year, pegi, matching, seasons, stars, desc, type, episodes }) => {
     // Función para mostrar temporadas o episodios
     const verTemporadas = () =>
         type === "miniserie" ? type :
@@ -15,7 +15,7 @@ const Netflix = ({ id, title, img, year, pegi, matching, seasons, desc, type, ep
             <div className="season">{verTemporadas()}</div>
             <img src={`./img/${img}`} alt={title} />
             <div className="container">
-                {matching > 50 && (
+                {matching > 60 && (
                     <div className="coincidencia">{matching}% de coincidencia</div>
                 )}
                 <div className="info-card-container">
@@ -28,6 +28,17 @@ const Netflix = ({ id, title, img, year, pegi, matching, seasons, desc, type, ep
                         <MdAddCircle color="white" size="24" />
                     </div>
                 </div>
+
+                {stars > -1 &&
+                    <div className="score">
+                        <div className={(stars > 0) ? "star" : "star-off"}></div>
+                        <div className={(stars > 1) ? "star" : "star-off"}></div>
+                        <div className={(stars > 2) ? "star" : "star-off"}></div>
+                        <div className={(stars > 3) ? "star" : "star-off"}></div>
+                        <div className={(stars > 4) ? "star" : "star-off"}></div>
+                    </div>}
+
+
                 <p>{desc}</p>
             </div>
         </article>
@@ -47,6 +58,7 @@ const NetflixList = () => {
                     year={serie.year}
                     pegi={serie.pegi}
                     matching={serie.matching}
+                    stars={serie.stars}
                     seasons={serie.seasons}
                     desc={serie.desc}
                     type={serie.type}

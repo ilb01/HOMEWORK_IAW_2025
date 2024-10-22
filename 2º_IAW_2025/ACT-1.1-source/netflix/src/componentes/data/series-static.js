@@ -7,6 +7,7 @@ export const seriesList = [
         "pegi":16,
         "matching":86,
         "seasons":2,
+        "stars": 2,
         "desc":"Una historiadora, un soldado y un programador viajan en el tiempo para perseguir a criminales que amenazan con perturbar el espacio-tiempo."
     },
     {
@@ -17,6 +18,7 @@ export const seriesList = [
         "pegi":16,
         "matching":50,
         "episodes":8,
+        "stars": 5,
         "desc":"Ellos son la primera generación de superhéroes. Ahora que deben pasar el testigo a sus hijos, las tensiones aumentan... y ya no valen las viejas normas."
     },
     {
@@ -27,6 +29,7 @@ export const seriesList = [
         "pegi":16,
         "matching":50,
         "seasons":2,
+        "stars": 4,
         "desc":"Geralt de Rivia, un cazador de monstruos mutante, viaja en pos de su destino por un mundo turbulento en el que, a menudo, los humanos son peores que las bestias."
     },
     {
@@ -37,6 +40,7 @@ export const seriesList = [
         "pegi":12,
         "matching":50,
         "seasons":1,
+        "stars": 2,
         "desc":"Fuerzas siniestras conspiran contra la cartógrafa huérfana Alina Starkov cuando desata un poder mágico capaz de cambiar el destino de su mundo, asolado por la guerra."
     },
     {
@@ -47,6 +51,7 @@ export const seriesList = [
         "pegi":16,
         "matching":89,
         "seasons":5,
+        "stars": 3,
         "desc":"Mucho antes de ser inspector, el policía principiante James Gordon se enfrenta al crimen y corrupción de Gotham City para vengar la muerte de los padres de Bruce Wayne."
     },
     {
