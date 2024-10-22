@@ -97,9 +97,9 @@ const Newsletter = () => {
             </div>
             <div className='copyright-footer'>© 2024 Ismael Lozano. All rights reserved.</div>
 
-            {/* Links container for Back, Unsubscribe, and Manage Preferences */}
+            {/* Links container for Visit, Unsubscribe, and Manage Preferences */}
             <div className="links-container">
-                <div className="back-to-home">
+                <div className="visit-to-home">
                     <a href="/">Visit to Home</a>
                 </div>
                 <div className="unsubscribe">
