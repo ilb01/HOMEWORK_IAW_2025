@@ -9,6 +9,7 @@ export const data = [
       imgs: {
         imgProduct: "nike.png",
         imgSoldOut: "soldOut.png",
+        imgStar: "star.png",
       },
     },
     {
@@ -21,6 +22,7 @@ export const data = [
       imgs: {
         imgProduct: "adidas.png",
         imgSoldOut: "soldOut.png",
+        imgStar: "star.png",
       },
     },
     {
@@ -33,6 +35,7 @@ export const data = [
       imgs: {
         imgProduct: "reebok.png",
         imgSoldOut: "soldOut.png",
+        imgStar: "star.png",
       },
     },
   ];

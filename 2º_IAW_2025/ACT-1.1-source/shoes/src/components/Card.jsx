@@ -6,22 +6,22 @@ const Card = ({ name, price, description, imgs, stock, newCollection }) => {
     const imageProduct = stock < 45 ? `assets/images/${imgs.imgProduct}` :
         `assets/images/${imgs.imgSoldOut}`;
 
-    const showCollection = () => {
-        return (newCollection) ?
-            (<span className='new'>
-                <img className='star' src={'assets/images/star.png'} alt="" />
+    const showNewCollection = () => {
+        return (
+            newCollection &&
+            <span className='new'>
+                <img className='star' src={'assets/images/' + imgs.imgStar} alt="" />
                 New
-            </span>) : ''
+            </span>)
     }
     return (
         <article className="card">
             <section className="card-container-img">
-                {showCollection()}
+                {showNewCollection()}
                 <img
                     className="img-product"
                     src={imageProduct}
                     alt={name}
-                    onError={(e) => { e.target.src = 'assets/images/default.png'; }} // Imagen por defecto si falla
                 />
             </section>
             <section>
