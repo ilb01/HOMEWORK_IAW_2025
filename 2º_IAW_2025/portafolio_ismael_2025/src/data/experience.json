@@ -1,0 +1,42 @@
+[
+    {
+        "date": "2023 - Present",
+        "position": "Frontend Developer at Google",
+        "description": "Developing responsive user interfaces and enhancing user experience for various applications using React, CSS, and JavaScript. Collaborating closely with design teams to ensure optimal design implementation.",
+        "techTags": [
+            "React",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "date": "2022 - 2023",
+        "position": "Web Developer at Microsoft",
+        "description": "Assisted in the development and optimization of web applications, focusing on performance enhancements and improving overall user experience.",
+        "techTags": [
+            "HTML",
+            "JavaScript",
+            "Bootstrap"
+        ]
+    },
+    {
+        "date": "2021 - 2022",
+        "position": "Software Engineering Intern at Amazon",
+        "description": "Gained hands-on experience in software development, working on various projects involving HTML, CSS, and JavaScript. Contributed to both frontend and backend development efforts.",
+        "techTags": [
+            "HTML",
+            "CSS",
+            "Node.js"
+        ]
+    },
+    {
+        "date": "2020 - 2021",
+        "position": "Junior Web Developer at IBM",
+        "description": "Developed custom websites for small businesses, focusing on user-friendly designs and effective performance. Utilized various technologies to enhance web functionality.",
+        "techTags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }
+]
