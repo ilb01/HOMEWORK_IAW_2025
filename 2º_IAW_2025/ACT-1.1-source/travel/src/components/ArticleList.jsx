@@ -1,19 +1,18 @@
-import React from 'react'
-import Article from './Article';
-import NotFound from './NotFound';
+import Article from "./Article.jsx";
+import NotFound from "./NotFound.jsx";
 
-const ArticleList = ({ articles }) => {
-    if (articles.length <= 0) return <NotFound />
-    else
-        return (
-            <section className="articulos">
-                {
-                    articles.map(e =>
-                        <Article key={e.id} title={e.title} img={e.img} desc={e.desc} />
-                    )
-                }
-            </section>
-        )
+export default function ArticleList({articles}){
+    if(articles.length==0) return (<NotFound/>)
+    return(
+        <section className="articulos">
+            {articles.map(article=>
+                <Article
+                key={article.id}
+                desc={article.desc}
+                img={article.img}
+                title={article.title}
+                />
+            )}
+        </section>
+    )
 }
-
-export default ArticleList;

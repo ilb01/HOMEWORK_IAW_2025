@@ -1,3 +1,4 @@
+
 @import url("normalize.css");
 /*  Uso de normalize.css para establecer los estilos por defecto de las etiquetas html para todos los navegadores por igual */
 
@@ -5,15 +6,13 @@
 /******************************************/
 /* Selector universal: afecta a todos los elementos*/
 * {
-
+    
     /* El grosor de los bordes i el espacio de los padding se incluyen en el tamaño total de la caja */
     box-sizing: border-box;
 }
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* contenedor para centrar el contenido  */
 .main-container {
     max-width: 1200px;
@@ -25,7 +24,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 /* Estilos mínimos para todos los párrafos de la web*/
 p {
     font-size: 16px;
@@ -44,7 +42,6 @@ p {
     margin-top: 40px;
     background-color: #DB008D;
 }
-
 .navegacion-principal a {
     color: #ffffff;
     text-decoration: none;
@@ -53,7 +50,6 @@ p {
     text-align: center;
     padding: 20px;
 }
-
 .navegacion-principal a:hover {
     background-color: #00B8E4;
 }
@@ -61,10 +57,9 @@ p {
 /* Contendio central */
 /******************************************/
 
-.contenido-principal {
+.contenido-principal{
     margin-top: 40px;
 }
-
 .contenido-principal, .sidebar {
     padding: 20px;
 }
@@ -77,78 +72,66 @@ p {
     list-style: none;
     padding: 0;
 }
-
 .sidebar ul li {
     padding: 10px;
 }
-
 .sidebar ul li:hover {
     background-color: #00B8E4;
 }
-
 .sidebar ul li a {
     color: #00B8E4;
     font-size: 18px;
     text-decoration: none;
 }
-
 .sidebar ul li:hover a {
     color: #ffffff;
 }
 
 /* Pie de página */
 /********************************************/
-footer {
+footer{
     background-color: #DB008D;
     padding-top: 40px;
     margin-top: 60px;
     color: #ffffff;
     text-align: center;
 }
-
 footer h2 {
     color: #ffffff;
 }
-
 footer a {
     color: #ffffff;
     font-size: 22px;
     margin-right: 20px;
 
-    display: block;
-    /* propiedad a cambiar por media query */
+    display: block; /* propiedad a cambiar por media query */
 }
-
-footer a:last-of-type {
+footer a:last-of-type{
     margin-right: 0;
 }
-
-footer .web-amigas a {
+footer .web-amigas a{
     font-size: 16px;
 }
-
-footer.web-amigas a:hover {
+footer.web-amigas a:hover{
     color: turquoise;
 }
-
 .copyright {
     background-color: #b10474;
     margin: 50px 0 0 0;
     padding: 20px 0;
 }
 
-
-@media (min-width:768px) {
+  
+@media (min-width:768px){
 
     /* Con este media query cuando la densidad de pí­xeles sea mayor de 768px se verá
     los enlaces de la navegación en horizontal
     */
-    .navegacion-principal {
+    .navegacion-principal{
         display: flex;
         justify-content: center;
     }
-
-    .navegacion-principal a {
+    .navegacion-principal a{
         display: inline-block;
     }
 
@@ -156,26 +139,24 @@ footer.web-amigas a:hover {
     el contenido central alineado a la izquierda i la barra lateral de enlaces
     de entradas hacia la derecha
     */
-    main {
+    main{
         display: flex;
         justify-content: center;
     }
-
     .articulos {
         width: 70%;
         padding: 0 60px 0 0;
     }
-
-    .sidebar {
+    .sidebar{
         width: 30%;
-        padding: 0;
+        padding:0;
         margin-top: 40px;
     }
 
     /* la imagen se mostrará a la izquierda del texto de la entrada.*/
     .entrada img {
         width: 300px;
-        float: left;
+        float:left;
         margin: 0 30px 0 0;
     }
 
@@ -184,18 +165,17 @@ footer.web-amigas a:hover {
         display: inline-block;
     }
 
-    .secciones-footer {
+    .secciones-footer{
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
     }
-
     .secciones-footer .nosotros {
         width: 30%;
         text-align: left;
     }
-
     .secciones-footer .menu {
         width: 50%;
         text-align: right;
     }
 }
+

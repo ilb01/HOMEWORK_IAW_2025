@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; 
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import './assets/css/Newsletter.css';
 
 const Newsletter = () => {
@@ -57,9 +57,11 @@ const Newsletter = () => {
 
             <div className="project-gallery">
                 <h3>Recent Projects</h3>
-                <Project title="🛠 Project: Dashboard in React" description="An interactive dashboard built with React and Redux for real-time data management." />
-                <Project title="🛠 Project: SPA in Vue" description="Single-page application using Vue.js for inventory management with dynamic filters and charts." />
+                <Project title="🛠 Project: Interactive Portfolio Site" description="A fully interactive portfolio built with React, leveraging JavaScript and JSON for dynamic content rendering. Features include a responsive design, seamless navigation, and JSON-based data storage for easy content updates." />
+                <Project title="🛠 Project: Task Management System in React" description="A task management platform designed with React, including CRUD operations, priority sorting, and a clean, user-centric interface for efficient task tracking." />
+                <Project title="🛠 Project: Interactive Quiz Application" description="An advanced quiz app using HTML, CSS, JavaScript, and React, with dynamic question generation, real-time feedback, and a progress tracker for user engagement." />
             </div>
+
 
             <div className="social-media-links">
                 <h4>Connect with Me:</h4>

@@ -1,13 +1,15 @@
-import React from 'react'
-import  "./Search.css";
+import "./Search.css"
 
-const Search = ({setQuery}) => {
-  return (
-    <div className='search-container'>
-        <span>Buscar</span>
-        <input type="text" name="search-form" id="search-form" onChange={(e) => setQuery(e.target.value)}/>
-    </div>
-  )
+export default function Search({setQuery}){
+    return(
+        <div className="search-container">
+            <span>Search</span>
+            <input 
+            type="text"
+            name="search-form"
+            id="search-form"
+            onChange={(e) => setQuery(e.target.value)}
+            />
+        </div>
+    )
 }
-
-export default Search

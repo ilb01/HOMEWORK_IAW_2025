@@ -1,14 +1,11 @@
-import React from 'react'
-import ArticleList from "./ArticleList";
-import Aside from "./Aside";
+import ArticleList from "./ArticleList.jsx";
+import Aside from "./Aside.jsx";
 
-const Main = ({ articles }) => {
+export default function Main({articles}){
   return (
     <main className="main-container">
-      <ArticleList articles={articles} />
-      <Aside />
+        <ArticleList articles={articles}/>
+        <Aside/>
     </main>
   )
 }
-
-export default Main

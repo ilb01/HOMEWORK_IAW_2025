@@ -5,7 +5,7 @@ import './assets/css/Contact.css';
 function Contact() {
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Aquí puedes agregar la lógica para enviar el formulario
+        // Mensaje de cuando envias el mensaje
         alert('Mensaje enviado. ¡Gracias por contactarnos!');
     };
 
@@ -18,7 +18,7 @@ function Contact() {
                         <label htmlFor="name" className="label">Full Name*</label>
                         <input type="text" id="name" name="name" required placeholder='What is your full name?' />
                     </div>
-                    
+
                     <div className="input-group">
                         <label htmlFor="email" className="label">Email Address*</label>
                         <input type="email" id="email" name="email" required placeholder='What is your email address?' />

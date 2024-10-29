@@ -12,13 +12,15 @@ function About() {
             <div className="about-section">
                 <h2 className="about-title">About Me</h2>
                 <p className="about-description">
-                    Hi! I'm Ismael Lozano, a passionate frontend developer in training, with a strong foundation in modern web technologies like HTML5, CSS3, JavaScript, and React. I am dedicated to creating visually appealing, responsive, and user-friendly websites. I thrive in environments where creativity meets functionality, always aiming to craft seamless user experiences.
+                    I'm <strong>Ismael Lozano</strong>, a passionate frontend developer in training with a strong foundation in modern web technologies like <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>, and <strong>React</strong>. I love creating visually appealing, responsive, and user-friendly websites that blend creativity and functionality for seamless user experiences.
                 </p>
+                <br />
                 <p className="about-description">
-                    My journey into web development started out of curiosity, and now it has become my full-fledged passion. I constantly seek to learn new tools and frameworks to stay ahead in this fast-evolving field.
+                    My journey into web development started from curiosity and has grown into a full-blown passion. I'm always on the lookout for new tools and frameworks to keep up with this fast-evolving field.
                 </p>
+                <br />
                 <p className="about-description">
-                    I specialize in applying best design practices to create attractive and functional web experiences. I believe in clean code, attention to detail, and the power of design to solve real-world problems.
+                    I focus on applying best design practices to craft attractive and functional web experiences. I believe in clean code, paying attention to details, and using design to tackle real-world problems through engaging and interactive websites.
                 </p>
             </div>
 
@@ -43,19 +45,20 @@ function About() {
             <div className="tech-section">
                 <h2 className="tech-title">Technologies</h2>
                 <ul className="tech-list">
-                    <li><FaHtml5 className="icon" /></li>
-                    <li><FaCss3Alt className="icon" /></li>
-                    <li><FaJs className="icon" /></li>
-                    <li><FaReact className="icon" /></li>
-                    <li><FaGithub className="icon" /></li>
-                    <li><FaBootstrap className="icon" /></li>
-                    <li><SiCanva className="icon" /></li>
-                    <li><FaNodeJs className="icon" /></li>
-                    <li><SiMongodb className="icon" /></li>
-                    <li><SiPostgresql className="icon" /></li>
-                    <li><FaPython className="icon" /></li>
-                    <li><SiFlask className="icon" /></li>
+                    <li><FaHtml5 className="icon" title="HTML5" /></li>
+                    <li><FaCss3Alt className="icon" title="CSS3" /></li>
+                    <li><FaJs className="icon" title="JavaScript" /></li>
+                    <li><FaReact className="icon" title="React" /></li>
+                    <li><FaGithub className="icon" title="GitHub" /></li>
+                    <li><FaBootstrap className="icon" title="Bootstrap" /></li>
+                    <li><SiCanva className="icon" title="Canva" /></li>
+                    <li><FaNodeJs className="icon" title="Node.js" /></li>
+                    <li><SiMongodb className="icon" title="MongoDB" /></li>
+                    <li><SiPostgresql className="icon" title="PostgreSQL" /></li>
+                    <li><FaPython className="icon" title="Python" /></li>
+                    <li><SiFlask className="icon" title="Flask" /></li>
                 </ul>
+
             </div>
 
             <div className="testimonials-section">

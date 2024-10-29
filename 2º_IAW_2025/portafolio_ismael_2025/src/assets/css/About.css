@@ -15,6 +15,7 @@ body {
     font-family: var(--font_secundario) !important;
     background-color: white; /* Fondo general claro */
     color: black;
+    cursor: default;
 }
 
 /* About.css */

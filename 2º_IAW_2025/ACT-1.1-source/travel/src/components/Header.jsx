@@ -1,11 +1,6 @@
-import React from 'react'
-
-const Header = () => {
+export default function Header(){
     return (
-        <header className="main-container site-header">
-            <img src="/assets/img/logo.png" alt="logotipo" />
-        </header>
-    )
+        <header className="site-header main-container">
+            <img src="assets/img/logo.png" alt="logotipo" />
+        </header>)
 }
-
-export default Header
