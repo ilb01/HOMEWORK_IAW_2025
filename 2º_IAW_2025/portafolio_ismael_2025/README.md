@@ -14,14 +14,17 @@ Debes instalar un gestor de versiones de Node, NPM y Node.js. Aquí tienes algun
 Después de instalar NVM, puedes instalar diferentes versiones de Node.js usando los siguientes pasos:
 
 1. Para instalar las versiones 20, 18 y 16.13.0, ejecuta los siguientes comandos:
+
    - `nvm install 20`
    - `nvm install 18`
    - `nvm install 16.13.0`
-  
+
 2. Para usar una versión específica, ejecuta:
+
    - `nvm use 18`
 
 3. Para encontrar las versiones que tienes instaladas, utiliza:
+
    - `nvm ls`
 
 4. Para ver qué versión estás utilizando actualmente, ejecuta:
@@ -30,6 +33,7 @@ Después de instalar NVM, puedes instalar diferentes versiones de Node.js usando
 ## Pasos para Crear el Proyecto
 
 1. **Crear la aplicación de React**:
+
    - Abre tu terminal o consola de comandos.
    - Escribe el siguiente comando para crear una nueva aplicación de React llamada `portafolio_ismael`:
      ```
@@ -37,12 +41,14 @@ Después de instalar NVM, puedes instalar diferentes versiones de Node.js usando
      ```
 
 2. **Acceder al directorio del proyecto**:
+
    - Después de que la creación de la aplicación se complete, navega al directorio del proyecto ejecutando:
      ```
      cd portafolio_ismael
      ```
 
 3. **Instalación de dependencias**:
+
    - Para instalar las dependencias necesarias, asegúrate de ejecutar el siguiente comando:
      ```
      npm install
@@ -59,12 +65,14 @@ Después de instalar NVM, puedes instalar diferentes versiones de Node.js usando
 Para enriquecer tu proyecto, considera instalar las siguientes bibliotecas:
 
 - **React Router**:
+
   - Para habilitar la navegación entre diferentes páginas (como Landing Page, Portafolio, Contacto, etc.), instala React Router ejecutando:
     ```
     npm install react-router-dom
     ```
 
 - **React Icons**:
+
   - Para incorporar iconos en tu proyecto, instala la biblioteca de iconos con el siguiente comando:
     ```
     npm install react-icons
@@ -79,12 +87,14 @@ Para enriquecer tu proyecto, considera instalar las siguientes bibliotecas:
 ## Comandos Adicionales
 
 - **Ejecutar pruebas**:
+
   - Para ejecutar las pruebas de tu aplicación, usa el siguiente comando:
     ```
-    npm test
+    **npm test**
     ```
 
 - **Crear una versión optimizada para producción**:
+
   - Para construir la aplicación para producción, utiliza:
     ```
     npm run build
@@ -101,18 +111,28 @@ Para enriquecer tu proyecto, considera instalar las siguientes bibliotecas:
 
 Una vez que hayas configurado el proyecto, la estructura de carpetas y archivos debería verse similar a esta:
 
-<!-- ULTIMO -->
+## Descripción de las Carpetas
 
-### Descripción de las Carpetas:
+- **`node_modules/`**: Contiene todas las dependencias instaladas por el proyecto.
 
-<!-- - `node_modules/`: Contiene todas las dependencias instaladas.
-- `public/`: Archivos públicos que se servirán directamente.
-- `src/`: Aquí es donde se encuentra el código fuente de tu aplicación.
-  - `assets/`: Recursos como imágenes y archivos estáticos.
-  - `components/`: Componentes reutilizables de tu aplicación.
-  - `pages/`: Diferentes páginas que componen tu portafolio.
-  - `App.js`: Componente principal de la aplicación.
-  - `index.js`: Punto de entrada de tu aplicación. -->
+- **`public/`**: Archivos públicos accesibles directamente por el navegador.
+
+  - **`img_projects`**: Carpeta de imagenes para los proyectos.
+  - **`index.html`**: Documento HTML principal de la aplicación.
+  - **`logo_ilb.png`**: Logo del proyecto.
+  - **`manifest.json`** y **`robots.txt`**: Archivos de configuración para la aplicación web y para motores de búsqueda.
+
+- **`src/`**: Aquí se almacena el código fuente de la aplicación.
+  - **`assets/`**: Contiene recursos estáticos.
+    - **`css/`**: Archivos de estilos CSS.
+    - **`img/`**: Imágenes generales del proyecto.
+  - **`components/`**: Componentes reutilizables de la aplicación.
+    - **`Navbar/`** y **`Newsletter/`**: Subcarpetas para organizar componentes específicos.
+  - **`data/`**: Carpeta para almacenar datos en formato JSON.
+  - **`pages/`**: Contiene los componentes que representan cada página del portafolio.
+  - **`pdf/`**: Carpeta para almacenar archivos PDF, como un CV u otros documentos descargables.
+  - **`App.jsx`**: Componente principal de la aplicación.
+  - **`index.jsx`**: Punto de entrada de la aplicación.
 
 ## Contribuciones
 

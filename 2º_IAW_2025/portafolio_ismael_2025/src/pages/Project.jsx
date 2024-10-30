@@ -27,14 +27,12 @@ function Project() {
                                         <FaGithub />
                                     </a>
                                 )}
-
                                 {project.url && (
                                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="button">
                                         <FaExternalLinkAlt />
                                     </a>
                                 )}
                             </div>
-
                         </div>
                     </div>
                 ))}

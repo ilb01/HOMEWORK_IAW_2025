@@ -8,9 +8,14 @@ function Navbar() {
 
     // Función que alterna el estado del menú (abre o cierra el menú)
     const toggleMenu = () => {
-        // Cambia el estado a lo opuesto (si está abierto lo cierra, si está cerrado lo abre)
         setIsMenuOpen(!isMenuOpen);
     };
+
+    // Función para cerrar el menú al hacer clic en un enlace en dispositivos móviles
+    const closeMenu = () => setIsMenuOpen(false);
+
+    // Clase activa para NavLink
+    const activeClass = ({ isActive }) => (isActive ? "active" : "");
 
     return (
         <nav className="navbar">
@@ -18,7 +23,12 @@ function Navbar() {
                 <img src={`${process.env.PUBLIC_URL}/logo_ilb.png`} alt="Logo" />
             </div>
             {/* Botón hamburguesa */}
-            <div className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu} aria-label="Toggle menu">
+            <div
+                className={`hamburger ${isMenuOpen ? "open" : ""}`}
+                onClick={toggleMenu}
+                aria-label="Toggle menu"
+                aria-expanded={isMenuOpen}
+            >
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
@@ -26,27 +36,27 @@ function Navbar() {
             {/* Menú de enlaces */}
             <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
                 <li>
-                    <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+                    <NavLink to="/" className={activeClass} onClick={closeMenu}>
                         HOME
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
+                    <NavLink to="/about" className={activeClass} onClick={closeMenu}>
                         ABOUT ME
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects" className={({ isActive }) => (isActive ? "active" : "")}>
+                    <NavLink to="/projects" className={activeClass} onClick={closeMenu}>
                         PROJECTS
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/newsletter" className={({ isActive }) => (isActive ? "active" : "")}>
+                    <NavLink to="/newsletter" className={activeClass} onClick={closeMenu}>
                         NEWSLETTER
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
+                    <NavLink to="/contact" className={activeClass} onClick={closeMenu}>
                         CONTACT
                     </NavLink>
                 </li>

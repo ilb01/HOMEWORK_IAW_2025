@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Netflix Clone",
-        "description": "A React and Node.js app that mimics the Netflix UI.",
+        "description": "A React and Node.js application that replicates the Netflix user interface.",
         "image": "netflix.png",
         "technologies": [
             "React",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "title": "Sneaker App",
-        "description": "An interactive app for exploring sneakers.",
+        "description": "An interactive application for exploring sneaker collections.",
         "image": "shoes.png",
         "technologies": [
             "React",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "title": "Travel Blog",
-        "description": "A platform for sharing travel experiences.",
+        "description": "A platform for sharing and reading travel experiences.",
         "image": "travel.png",
         "technologies": [
             "React",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "title": "Clothing E-commerce",
-        "description": "An online store for clothing items.",
+        "description": "An online clothing store with a user-friendly interface.",
         "image": "dress.png",
         "technologies": [
             "HTML",
@@ -50,7 +50,7 @@
     {
         "id": 5,
         "title": "Portfolio Ismael 2022",
-        "description": "My personal portfolio from 2022.",
+        "description": "My personal portfolio from 2022 showcasing my work.",
         "image": "portafolio_2022.png",
         "technologies": [
             "HTML",
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "title": "Udemy Courses",
-        "description": "Showcase of various online courses.",
+        "description": "A showcase of various completed online courses on Udemy.",
         "image": "udemy.png",
         "technologies": [
             "HTML",
@@ -73,8 +73,8 @@
     },
     {
         "id": 7,
-        "title": "Camper",
-        "description": "A project for shopping Camper shoes.",
+        "title": "Camper Store",
+        "description": "An e-commerce project for browsing and purchasing Camper shoes.",
         "image": "camper.png",
         "technologies": [
             "HTML",
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "title": "Stranger Things Netflix",
-        "description": "A web project inspired by 'Stranger Things.'",
+        "description": "A web project inspired by the 'Stranger Things' series.",
         "image": "stranger.png",
         "technologies": [
             "HTML",
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "title": "Movie Listing",
-        "description": "A movie listing app for browsing films.",
+        "description": "An application for browsing and discovering movies.",
         "image": "cartelera.png",
         "technologies": [
             "HTML",

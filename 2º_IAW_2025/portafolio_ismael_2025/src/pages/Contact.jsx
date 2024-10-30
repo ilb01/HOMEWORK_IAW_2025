@@ -27,7 +27,6 @@ function Contact() {
 
         setFormStatus('Message sent. Thank you for contacting us!'); // Muestra el mensaje de confirmación
 
-
         // Limpia los campos del formulario
         setFormData({
             name: '',
@@ -100,7 +99,7 @@ function Contact() {
                         <div className="contact-details">
                             <div className="contact-item">
                                 <FaPhone className="contact-icon" />
-                                <a href="tel:699472826" aria-label="Phone number">693 67 38 45</a>
+                                <a href="tel:693673845" aria-label="Phone number">693 67 38 45</a>
                             </div>
                             <div className="contact-item">
                                 <FaEnvelope className="contact-icon" />

@@ -4,7 +4,7 @@ import '../assets/css/LandingPage.css';
 import photo from '../assets/img/foto.jpg';
 
 function LandingPage() {
-    // Metodo para descargar el CV (Curriculumn Vitae)
+    // Método para descargar el CV (Curriculum Vitae)
     const handleDownload = () => {
         const pdfUrl = require('../pdf/cv_ismael.pdf');
         const link = document.createElement('a');
@@ -33,7 +33,7 @@ function LandingPage() {
                         <button aria-label="GitHub" onClick={() => window.open("https://github.com/ilb01", "_blank")}>
                             <FaGithub />
                         </button>
-                        {/* Curriculumn */}
+                        {/* Curriculum */}
                         <button onClick={handleDownload} style={{ cursor: 'pointer' }} aria-label="Download CV">
                             <FaFileAlt />
                         </button>

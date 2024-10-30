@@ -58,7 +58,6 @@ function About() {
                     <li><FaPython className="icon" title="Python" /></li>
                     <li><SiFlask className="icon" title="Flask" /></li>
                 </ul>
-
             </div>
 
             <div className="testimonials-section">
