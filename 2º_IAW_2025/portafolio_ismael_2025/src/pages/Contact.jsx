@@ -21,7 +21,7 @@ function Contact() {
     // Maneja el envío del formulario
     const handleSubmit = (event) => {
         event.preventDefault(); // Evita que se recargue la página
-        
+
         // Alerta con el contenido del mensaje
         alert(`Message sent:\n\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`);
 

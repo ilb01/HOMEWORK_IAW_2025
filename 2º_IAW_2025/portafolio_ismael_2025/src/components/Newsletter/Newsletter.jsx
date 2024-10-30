@@ -3,68 +3,95 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import '../../assets/css/Newsletter.css';
 
 const Newsletter = () => {
-    const [email, setEmail] = useState('');
-    const [isSubscribed, setIsSubscribed] = useState(false);
+    const [email, setEmail] = useState(''); // Estado para almacenar el email del usuario
+    const [isSubscribed, setIsSubscribed] = useState(false); // Estado para verificar si el usuario está suscrito
 
+    // Maneja la suscripción al formulario
     const handleSubscribe = (e) => {
-        e.preventDefault();
-        setIsSubscribed(true);
-        setEmail('');
+        e.preventDefault(); // Previene el comportamiento predeterminado del formulario
+        setIsSubscribed(true); // Cambia el estado a suscrito
+        setEmail(''); // Limpia el campo de email
     };
 
     return (
         <div className="newsletter-container" aria-live="polite">
             <h2>Subscribe to Our Newsletter!</h2>
             <div className="newsletter-description">
-                <p>Get updates on my latest projects and publications related to frontend development, tool analysis, and more.</p>
+                <p>Obtén actualizaciones sobre mis últimos proyectos y publicaciones relacionadas con el desarrollo frontend, análisis de herramientas y más.</p>
                 <ul>
-                    <li>🔥 Tutorials on JavaScript, React, and other frameworks</li>
-                    <li>🔥 Best practices in web development</li>
-                    <li>🔥 Reviews of frontend tools and libraries</li>
-                    <li>🔥 News about my projects on GitHub</li>
+                    <li>🔥 Tutoriales sobre JavaScript, React y otros frameworks</li>
+                    <li>🔥 Mejores prácticas en desarrollo web</li>
+                    <li>🔥 Reseñas de herramientas y librerías frontend</li>
+                    <li>🔥 Noticias sobre mis proyectos en GitHub</li>
                 </ul>
             </div>
 
             {isSubscribed ? (
-                <p className="success-message">Thank you for subscribing! Check your email for more details.</p>
+                <p className="success-message">¡Gracias por suscribirte! Revisa tu correo para más detalles.</p>
             ) : (
                 <form onSubmit={handleSubscribe} className="form-animation">
                     <input
                         type="email"
                         id="email"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Enter your email address"
+                        onChange={(e) => setEmail(e.target.value)} // Actualiza el estado del email
+                        placeholder="Introduce tu dirección de correo electrónico"
                         required
                         className="input-animation"
                     />
-                    <button type="submit" className="subscribe-button">Subscribe</button>
+                    <button type="submit" className="subscribe-button">Suscribirse</button>
                 </form>
             )}
 
             <div className="featured-articles">
-                <h3>Featured Articles</h3>
-                <Article title="🚀 Best Practices in React 2024" description="Explore new trends and advanced techniques in React to optimize performance and user experience." />
-                <Article title="⚡ Web Performance: Key to Improve Speed" description="Discover how to optimize your site's loading speed using the most modern tools in the frontend ecosystem." />
-                <Article title="🎨 UI/UX: Tips for Attractive Interfaces" description="How to design interfaces that captivate users by applying solid principles of user-centered design." />
+                <h3>Artículos Destacados</h3>
+                {/* Componentes de artículo en línea */}
+                <div className="article">
+                    <h4>🚀 Mejores Prácticas en React 2024</h4>
+                    <p>Explora nuevas tendencias y técnicas avanzadas en React para optimizar el rendimiento y la experiencia del usuario.</p>
+                </div>
+                <div className="article">
+                    <h4>⚡ Rendimiento Web: Clave para Mejorar la Velocidad</h4>
+                    <p>Descubre cómo optimizar la velocidad de carga de tu sitio utilizando las herramientas más modernas en el ecosistema frontend.</p>
+                </div>
+                <div className="article">
+                    <h4>🎨 UI/UX: Consejos para Interfaces Atractivas</h4>
+                    <p>Cómo diseñar interfaces que cautiven a los usuarios aplicando sólidos principios de diseño centrado en el usuario.</p>
+                </div>
             </div>
 
             <div className="testimonials">
-                <h3>What Our Subscribers Say</h3>
-                <Testimonial text="The best newsletter on frontend development I've found. Always updated and useful." author="Juan Pérez, Web Developer" />
-                <Testimonial text="Thanks to this newsletter, I learned techniques that helped me optimize my projects and improve my workflow." author="Ana García, UI/UX Designer" />
+                <h3>Lo que Dicen Nuestros Suscriptores</h3>
+                {/* Componentes de testimonio en línea */}
+                <div className="testimonial">
+                    <p>"La mejor newsletter sobre desarrollo frontend que he encontrado. Siempre actualizada y útil."</p>
+                    <span>- Juan Pérez, Desarrollador Web</span>
+                </div>
+                <div className="testimonial">
+                    <p>"Gracias a esta newsletter, aprendí técnicas que me ayudaron a optimizar mis proyectos y mejorar mi flujo de trabajo."</p>
+                    <span>- Ana García, Diseñadora UI/UX</span>
+                </div>
             </div>
 
             <div className="project-gallery">
-                <h3>Recent Projects</h3>
-                <Project title="🛠 Project: Interactive Portfolio Site" description="A fully interactive portfolio built with React, leveraging JavaScript and JSON for dynamic content rendering. Features include a responsive design, seamless navigation, and JSON-based data storage for easy content updates." />
-                <Project title="🛠 Project: Task Management System in React" description="A task management platform designed with React, including CRUD operations, priority sorting, and a clean, user-centric interface for efficient task tracking." />
-                <Project title="🛠 Project: Interactive Quiz Application" description="An advanced quiz app using HTML, CSS, JavaScript, and React, with dynamic question generation, real-time feedback, and a progress tracker for user engagement." />
+                <h3>Proyectos Recientes</h3>
+                {/* Componentes de proyecto en línea */}
+                <div className="project">
+                    <h4>🛠 Proyecto: Sitio Interactivo de Portafolio</h4>
+                    <p>Un portafolio totalmente interactivo construido con React, aprovechando JavaScript y JSON para el renderizado dinámico de contenido. Incluye un diseño responsivo, navegación fluida y almacenamiento de datos basado en JSON para actualizaciones fáciles de contenido.</p>
+                </div>
+                <div className="project">
+                    <h4>🛠 Proyecto: Sistema de Gestión de Tareas en React</h4>
+                    <p>Una plataforma de gestión de tareas diseñada con React, incluyendo operaciones CRUD, ordenación por prioridad y una interfaz limpia centrada en el usuario para un seguimiento eficiente de las tareas.</p>
+                </div>
+                <div className="project">
+                    <h4>🛠 Proyecto: Aplicación de Cuestionarios Interactiva</h4>
+                    <p>Una avanzada aplicación de cuestionarios utilizando HTML, CSS, JavaScript y React, con generación dinámica de preguntas, retroalimentación en tiempo real y un rastreador de progreso para el compromiso del usuario.</p>
+                </div>
             </div>
 
-
             <div className="social-media-links">
-                <h4>Connect with Me:</h4>
+                <h4>Conéctate Conmigo:</h4>
                 <button
                     aria-label="LinkedIn"
                     onClick={() => window.open("https://www.linkedin.com/in/ismaellozanobosch/", "_blank")}
@@ -80,16 +107,15 @@ const Newsletter = () => {
                 <button
                     aria-label="Email"
                     onClick={() => {
-                        alert("El correo es este ilb01@iesemilidarder.com");
+                        alert("El correo es este ilb01@iesemilidarder.com"); // Comentario del correo
                     }}
                 >
-                    <FaEnvelope /> {/* Ícono de correo */}
+                    <FaEnvelope />
                 </button>
-
             </div>
-            <div className='copyright-footer'>© 2024 Ismael Lozano. All rights reserved.</div>
+            <div className='copyright-footer'>© 2024 Ismael Lozano. Todos los derechos reservados.</div>
 
-            {/* Links container for Visit, Unsubscribe, and Manage Preferences */}
+            {/* Contenedor de enlaces para Visitar, Cancelar suscripción y Administrar preferencias */}
             <div className="links-container">
                 <div className="visit-to-home">
                     <a href="/">Visit to Home</a>
@@ -104,26 +130,5 @@ const Newsletter = () => {
         </div>
     );
 };
-
-const Article = ({ title, description }) => (
-    <div className="article">
-        <h4>{title}</h4>
-        <p>{description}</p>
-    </div>
-);
-
-const Testimonial = ({ text, author }) => (
-    <div className="testimonial">
-        <p>"{text}"</p>
-        <span>- {author}</span>
-    </div>
-);
-
-const Project = ({ title, description }) => (
-    <div className="project">
-        <h4>{title}</h4>
-        <p>{description}</p>
-    </div>
-);
 
 export default Newsletter;

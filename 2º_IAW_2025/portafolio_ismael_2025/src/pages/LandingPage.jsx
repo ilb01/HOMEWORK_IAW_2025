@@ -4,26 +4,16 @@ import '../assets/css/LandingPage.css';
 import photo from '../assets/img/foto.jpg';
 
 function LandingPage() {
+    // Metodo para descargar el CV (Curriculumn Vitae)
     const handleDownload = () => {
-        // Obtiene la URL del archivo PDF usando require
         const pdfUrl = require('../pdf/cv_ismael.pdf');
-
-        // Crea un elemento <a> dinámicamente
         const link = document.createElement('a');
 
-        // Asigna la URL del archivo PDF al atributo href del enlace
         link.href = pdfUrl;
-
-        // Especifica el nombre con el que se descargará el archivo
         link.download = 'cv_ismael.pdf';
 
-        // Añade el enlace al documento para que sea funcional
         document.body.appendChild(link);
-
-        // Simula un clic en el enlace para iniciar la descarga
         link.click();
-
-        // Elimina el enlace del documento después de la descarga
         document.body.removeChild(link);
     };
 
@@ -43,8 +33,9 @@ function LandingPage() {
                         <button aria-label="GitHub" onClick={() => window.open("https://github.com/ilb01", "_blank")}>
                             <FaGithub />
                         </button>
+                        {/* Curriculumn */}
                         <button onClick={handleDownload} style={{ cursor: 'pointer' }} aria-label="Download CV">
-                            <FaFileAlt /> {/* Replaced FaDownload with FaFileAlt */}
+                            <FaFileAlt />
                         </button>
                     </div>
                 </div>
