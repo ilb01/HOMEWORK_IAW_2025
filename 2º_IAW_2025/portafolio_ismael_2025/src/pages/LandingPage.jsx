@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaFileAlt, FaMapMarkerAlt } from 'react-icons/fa'; // Import location icon
-import './assets/css/LandingPage.css';
-import photo from './assets/img/foto.jpg';
+import '../assets/css/LandingPage.css';
+import photo from '../assets/img/foto.jpg';
 
 function LandingPage() {
     const handleDownload = () => {
         // Obtiene la URL del archivo PDF usando require
-        const pdfUrl = require('./pdf/cv_ismael.pdf');
+        const pdfUrl = require('../pdf/cv_ismael.pdf');
 
         // Crea un elemento <a> dinámicamente
         const link = document.createElement('a');

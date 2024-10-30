@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'; // Import GitHub and external link icons
-import './assets/css/Project.css';
-import projectsData from './data/proyectos.json'; // Import JSON
+import '../assets/css/Project.css';
+import projectsData from '../data/proyectos.json'; // Import JSON
 
 function Project() {
     return (

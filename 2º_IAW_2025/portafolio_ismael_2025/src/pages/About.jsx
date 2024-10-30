@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaBootstrap, FaNodeJs, FaPython } from 'react-icons/fa'; // Iconos para tecnologías
 import { SiMongodb, SiCanva, SiPostgresql, SiFlask } from 'react-icons/si'; // Iconos adicionales para MongoDB, PostgreSQL y Flask
-import experiences from './data/experience.json';
-import testimonials from './data/testimonial.json';
+import experiences from '../data/experience.json';
+import testimonials from '../data/testimonial.json';
 
-import './assets/css/About.css';
+import '../assets/css/About.css';
 
 function About() {
     return (

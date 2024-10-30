@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './assets/css/Navbar.css';
+import '../../assets/css/Navbar.css';
 
 function Navbar() {
     // Estado que controla si el menú está abierto o cerrado

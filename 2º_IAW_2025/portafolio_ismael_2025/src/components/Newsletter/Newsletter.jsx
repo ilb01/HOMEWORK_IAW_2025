@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import './assets/css/Newsletter.css';
+import '../../assets/css/Newsletter.css';
 
 const Newsletter = () => {
     const [email, setEmail] = useState('');
