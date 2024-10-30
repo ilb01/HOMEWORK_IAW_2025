@@ -100,7 +100,7 @@ function Contact() {
                         <div className="contact-details">
                             <div className="contact-item">
                                 <FaPhone className="contact-icon" />
-                                <a href="tel:699472826" aria-label="Phone number">699 47 28 26</a>
+                                <a href="tel:699472826" aria-label="Phone number">693 67 38 45</a>
                             </div>
                             <div className="contact-item">
                                 <FaEnvelope className="contact-icon" />
