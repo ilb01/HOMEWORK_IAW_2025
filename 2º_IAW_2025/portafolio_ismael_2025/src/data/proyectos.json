@@ -1,139 +1,110 @@
 [
     {
         "id": 1,
-        "title": "Proyecto de Página Web",
-        "description": "Una página web moderna y receptiva.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+1", 
+        "title": "Netflix Clone",
+        "description": "A React and Node.js app that mimics the Netflix UI.",
+        "image": "netflix.png",
         "technologies": [
-            "HTML",
+            "React",
             "CSS",
-            "JavaScript"
+            "Node.js"
         ],
-        "url": "https://enlace-al-proyecto1.com"
+        "github": "https://github.com/ilb01/HOMEWORK_IAW_2025/tree/main/2%C2%BA_IAW_2025/ACT-1.1-source/netflix"
     },
     {
         "id": 2,
-        "title": "Aplicación React",
-        "description": "Aplicación interactiva usando React.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+2",
+        "title": "Sneaker App",
+        "description": "An interactive app for exploring sneakers.",
+        "image": "shoes.png",
         "technologies": [
             "React",
+            "CSS",
             "Node.js"
         ],
-        "url": "https://enlace-al-proyecto2.com"
+        "github": "https://github.com/ilb01/HOMEWORK_IAW_2025/tree/main/2%C2%BA_IAW_2025/ACT-1.1-source/shoes"
     },
     {
         "id": 3,
-        "title": "Sitio de E-commerce",
-        "description": "Una plataforma de comercio electrónico completa.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+3",
+        "title": "Travel Blog",
+        "description": "A platform for sharing travel experiences.",
+        "image": "travel.png",
         "technologies": [
-            "HTML",
+            "React",
             "CSS",
-            "JavaScript",
-            "Shopify"
+            "Node.js"
         ],
-        "url": "https://enlace-al-proyecto3.com"
+        "github": "https://github.com/ilb01/HOMEWORK_IAW_2025/tree/main/2%C2%BA_IAW_2025/ACT-1.1-source/travel"
     },
     {
         "id": 4,
-        "title": "Juego en JavaScript",
-        "description": "Un juego interactivo creado con JavaScript.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+4",
+        "title": "Clothing E-commerce",
+        "description": "An online store for clothing items.",
+        "image": "dress.png",
         "technologies": [
-            "JavaScript",
-            "HTML5"
+            "HTML",
+            "CSS"
         ],
-        "url": "https://enlace-al-proyecto4.com"
+        "url": "https://dress-ismael.netlify.app/",
+        "github": "https://github.com/ilb01/LLM-EX1-ismael-lozano"
     },
     {
         "id": 5,
-        "title": "Blog Personal",
-        "description": "Un blog para compartir pensamientos y experiencias.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+5",
+        "title": "Portfolio Ismael 2022",
+        "description": "My personal portfolio from 2022.",
+        "image": "portafolio_2022.png",
         "technologies": [
-            "React",
+            "HTML",
             "CSS"
         ],
-        "url": "https://enlace-al-proyecto5.com"
+        "url": "https://portafolioismael-2022.netlify.app/",
+        "github": "https://github.com/ilb01/portafolio_ismael_lozano"
     },
     {
         "id": 6,
-        "title": "Aplicación Móvil con React Native",
-        "description": "Aplicación móvil multiplataforma usando React Native.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+6",
-        "technologies": [
-            "React Native",
-            "Firebase"
-        ],
-        "url": "https://enlace-al-proyecto6.com"
-    },
-    {
-        "id": 7,
-        "title": "Sistema de Gestión de Tareas",
-        "description": "Una aplicación para gestionar tareas y proyectos.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+7",
-        "technologies": [
-            "Vue.js",
-            "Node.js"
-        ],
-        "url": "https://enlace-al-proyecto7.com"
-    },
-    {
-        "id": 8,
-        "title": "Portafolio Personal",
-        "description": "Un portafolio para mostrar proyectos y habilidades.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+8",
+        "title": "Udemy Courses",
+        "description": "Showcase of various online courses.",
+        "image": "udemy.png",
         "technologies": [
             "HTML",
             "CSS",
             "JavaScript"
         ],
-        "url": "https://enlace-al-proyecto8.com"
+        "github": "https://github.com/ilb01/HOMEWORK2023/tree/main/UT4/CURSOS"
+    },
+    {
+        "id": 7,
+        "title": "Camper",
+        "description": "A project for shopping Camper shoes.",
+        "image": "camper.png",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "github": "https://github.com/ilb01/HOMEWORK2023/tree/main/UT4/ACT%204.5/CAMPER"
+    },
+    {
+        "id": 8,
+        "title": "Stranger Things Netflix",
+        "description": "A web project inspired by 'Stranger Things.'",
+        "image": "stranger.png",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "github": "https://github.com/ilb01/HOMEWORK2023/tree/main/UT4/STRANGERTHINGS"
     },
     {
         "id": 9,
-        "title": "Dashboard de Datos",
-        "description": "Un tablero interactivo para visualización de datos.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+9",
+        "title": "Movie Listing",
+        "description": "A movie listing app for browsing films.",
+        "image": "cartelera.png",
         "technologies": [
-            "React",
-            "D3.js"
+            "HTML",
+            "CSS",
+            "JavaScript"
         ],
-        "url": "https://enlace-al-proyecto9.com"
-    },
-    {
-        "id": 10,
-        "title": "Chat en Tiempo Real",
-        "description": "Una aplicación de chat usando WebSocket.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+10",
-        "technologies": [
-            "Node.js",
-            "Socket.io"
-        ],
-        "url": "https://enlace-al-proyecto10.com"
-    },
-    {
-        "id": 11,
-        "title": "Clon de Twitter",
-        "description": "Un clon simple de la red social Twitter.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+11",
-        "technologies": [
-            "React",
-            "Firebase"
-        ],
-        "url": "https://enlace-al-proyecto11.com"
-    },
-    {
-        "id": 12,
-        "title": "Sistema de Reservas",
-        "description": "Una aplicación para gestionar reservas de eventos.",
-        "image": "https://via.placeholder.com/400x300?text=Proyecto+12",
-        "technologies": [
-            "Angular",
-            "Node.js"
-        ],
-        "url": "https://enlace-al-proyecto12.com"
+        "github": "https://github.com/ilb01/HOMEWORK2023/tree/main/UT5/API-MOVIES"
     }
 ]
-

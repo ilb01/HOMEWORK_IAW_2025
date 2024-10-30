@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'; // Import GitHub and external link icons
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import '../assets/css/Project.css';
-import projectsData from '../data/proyectos.json'; // Import JSON
+import projectsData from '../data/proyectos.json';
 
 function Project() {
     return (
@@ -11,7 +11,7 @@ function Project() {
                 {projectsData.map((project) => (
                     <div key={project.id} className="project-card">
                         <div className="project-image">
-                            <img src={project.image} alt={project.title} />
+                            <img src={`${process.env.PUBLIC_URL}/img_projects/${project.image}`} alt={project.title} />
                         </div>
                         <div className="project-overlay">
                             <h2>{project.title}</h2>
@@ -22,13 +22,19 @@ function Project() {
                                 ))}
                             </div>
                             <div className="button-container">
-                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="button">
-                                    <FaGithub />
-                                </a>
-                                <a href={project.url} target="_blank" rel="noopener noreferrer" className="button">
-                                    <FaExternalLinkAlt />
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="button">
+                                        <FaGithub />
+                                    </a>
+                                )}
+
+                                {project.url && (
+                                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="button">
+                                        <FaExternalLinkAlt />
+                                    </a>
+                                )}
                             </div>
+
                         </div>
                     </div>
                 ))}
