@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../../assets/css/Navbar.css';
 
 function Navbar() {
@@ -20,9 +20,10 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="logo">
-            <a href="/">
-                <img src={`${process.env.PUBLIC_URL}/logo_ilb.png`} alt="Logo" />
-            </a>            </div>
+                <Link to="/">
+                    <img src={`${process.env.PUBLIC_URL}/logo_ilb.png`} alt="Logo" />
+                </Link>
+            </div>
             {/* Botón hamburguesa */}
             <div
                 className={`hamburger ${isMenuOpen ? "open" : ""}`}
