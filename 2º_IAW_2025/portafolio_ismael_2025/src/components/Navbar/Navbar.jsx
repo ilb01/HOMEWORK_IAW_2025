@@ -20,8 +20,9 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="logo">
+            <a href="/">
                 <img src={`${process.env.PUBLIC_URL}/logo_ilb.png`} alt="Logo" />
-            </div>
+            </a>            </div>
             {/* Botón hamburguesa */}
             <div
                 className={`hamburger ${isMenuOpen ? "open" : ""}`}
