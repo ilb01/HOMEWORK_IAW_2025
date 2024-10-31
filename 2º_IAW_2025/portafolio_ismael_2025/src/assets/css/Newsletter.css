@@ -9,7 +9,6 @@
     --font_principal: 'Poppins', sans-serif;
     --font_secundario: 'Montserrat', sans-serif;
     --primary-hover-color: #808080;
-    /* Gray on hover */
     --success-color: #28a745;
     --light-background: #f9f9f9;
     --light-text: #333333;
@@ -18,7 +17,6 @@
 body {
     font-family: var(--font_secundario);
     background-color: #f0f0f0;
-    /* Page background */
     color: var(--light-text);
 }
 
@@ -31,7 +29,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 .success-message {
@@ -69,27 +67,19 @@ body {
 /* Subscribe Button */
 .subscribe-button {
     background-color: black;
-    /* Black background */
     color: #ffffff;
-    /* White text */
     border: none;
     border-radius: 5px;
-    /* Rounded borders */
     margin-top: 10px;
     padding: 15px 35px;
-    /* Padding */
     font-size: 1.2rem;
-    /* Font size */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    /* Transitions */
 }
 
 .subscribe-button:hover {
     background-color: var(--primary-hover-color);
-    /* Gray background on hover */
     transform: scale(1.05);
-    /* Scale effect on hover */
 }
 
 /* Featured Articles */
@@ -198,53 +188,41 @@ body {
     border: none;
     cursor: pointer;
     color: black;
-    /* Black color */
     transition: color 0.3s, transform 0.2s;
 }
 
 .social-media-links button:hover {
     color: var(--primary-hover-color);
-    /* Gray on hover */
     transform: scale(1.1);
-    /* Scale effect on hover */
 }
 
 /* Copyright Footer */
 .copyright-footer {
     color: rgb(144, 141, 141);
     font-size: 12px;
-    /* Aumenté el tamaño del texto */
     margin-top: 20px;
-    /* Espaciado superior */
     text-align: center;
-    /* Centrando el texto */
 }
 
 /* Links Container */
 .links-container {
     display: flex;
     justify-content: center;
-    /* Center the links */
     margin-top: 10px;
-    /* Espacio sobre los enlaces */
 }
 
 .links-container div {
     margin: 0 15px;
-    /* Espacio entre los enlaces */
 }
 
 .links-container a {
     text-decoration: none;
     font-size: 0.9rem;
-    /* Ajusté el tamaño del texto */
     font-weight: bold;
     color: black;
-    /* Color negro */
     transition: color 0.3s;
 }
 
 .links-container a:hover {
     color: var(--primary-hover-color);
-    /* Gray on hover */
 }

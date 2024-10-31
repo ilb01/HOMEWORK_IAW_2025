@@ -51,10 +51,8 @@ p {
     width: 100%;
     margin-top: 10px;
     gap: 20px;
-    /* Ajusta el espacio entre columnas */
 }
 
-/* Nueva clase contact-box que combina el formulario y la información de contacto */
 .contact-box {
     display: flex;
     flex-direction: column;
@@ -118,15 +116,11 @@ textarea:focus {
     font-weight: bold;
 }
 
-/* Ajuste en la alineación horizontal */
 .contact-details {
     display: flex;
     flex-direction: row;
-    /* Mantiene la alineación horizontal */
     justify-content: space-between;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
 }
 
 .contact-item {
@@ -135,25 +129,20 @@ textarea:focus {
     font-size: 1rem;
     color: black;
     padding: 8px;
-    /* Padding reducido */
     border-radius: 8px;
     margin-top: 20px;
     transition: background-color 0.3s ease;
     flex-direction: row;
-    /* Mantiene los íconos y el texto en fila */
 }
 
 .contact-item:hover {
     background-color: #e0e0e0;
-    /* Fondo gris claro al hacer hover */
 }
 
 .contact-icon {
     font-size: 1.2rem;
-    /* Tamaño del ícono reducido */
     color: var(--primary-hover-color);
     margin-right: 8px;
-    /* Espaciado ajustado */
 }
 
 .contact-item a {
@@ -192,12 +181,9 @@ textarea:focus {
         margin: 0;
     }
 
-    /* Ajustes para detalles de contacto en pantallas pequeñas */
     .contact-details {
         flex-direction: column;
-        /* Cambiar a columna en pantallas pequeñas */
         gap: 10px;
-        /* Menos espacio entre elementos en móvil */
     }
 }
 

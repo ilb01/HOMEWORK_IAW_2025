@@ -24,10 +24,8 @@ body {
     background-color: white;
     width: 100%;
     z-index: 1000;
-    /* Asegura que la barra de navegación esté por encima */
     border-bottom: 0.2px solid rgba(0, 0, 0, 0.237);
     position: relative;
-    /* Necesario para el control de z-index */
 }
 
 .logo img {
@@ -38,13 +36,10 @@ body {
 /* Botón hamburguesa */
 .hamburger {
     display: none;
-    /* Oculto por defecto en pantallas grandes */
     flex-direction: column;
     cursor: pointer;
     z-index: 2001;
-    /* Asegura que el botón hamburguesa esté por encima */
     position: relative;
-    /* Control de z-index */
 }
 
 .hamburger .bar {
@@ -73,7 +68,6 @@ body {
     display: flex;
     gap: 20px;
     z-index: 2000;
-    /* Asegura que los enlaces del menú estén visibles */
     position: relative;
 }
 
@@ -108,12 +102,10 @@ body {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-        /* Muestra el botón hamburguesa en pantallas pequeñas */
     }
 
     .nav-links {
         display: none;
-        /* Oculta el menú por defecto en pantallas pequeñas */
         flex-direction: column;
         position: absolute;
         top: 0;
@@ -121,30 +113,23 @@ body {
         background-color: white;
         width: 100%;
         height: 100vh;
-        /* El menú ocupa toda la altura de la pantalla */
         text-align: center;
-        /* Centra el texto */
         padding: 20px;
         z-index: 2000;
-        /* Asegura que el menú esté visible */
         justify-content: center;
-        /* Centra verticalmente los enlaces */
     }
 
     .nav-links.active {
         display: flex;
-        /* Muestra el menú al hacer clic en el hamburguesa */
     }
 
     .nav-links li {
         margin: 20px 0;
-        /* Añade espacio entre los enlaces */
     }
 
     .nav-links a {
         padding: 15px;
         border-radius: 0;
         font-size: 1.5rem;
-        /* Aumenta el tamaño de la fuente para mejor visibilidad */
     }
 }
