@@ -15,14 +15,15 @@ const [tours, setTours] = useState([])
     setTours(newTours);
   }
 
+  // COGER LOS DATOS DE UN JSON
   // TODO: Get Tours data from json 
   const fetchTours = async () => {
     const url = '/data.json';
     try {
       const response = await fetch(url)
-      const tours = await response.json()
+      const data = await response.json()
       setLoading(false);
-      setTours(tours);
+      setTours(data);
     }catch (error){
       setLoading(false);
       console.log(error);

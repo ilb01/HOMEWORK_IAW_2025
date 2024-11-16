@@ -1,0 +1,215 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.camera-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.camera-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la cámara y el video */
+.video-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    transform: scaleX(-1); /* Espejo horizontal */
+}
+
+.canvas {
+    display: none;
+}
+
+.photo-count-container {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Estilos para los filtros */
+.filter-container {
+    margin: 20px 0;
+}
+
+.filter-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+.filter-button:hover {
+    background-color: #666;
+}
+
+.filter-button:focus {
+    outline: none;
+}
+
+/* Estilos para los botones de zoom */
+.zoom-container {
+    margin: 20px 0;
+}
+
+.zoom-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+.zoom-button:hover {
+    background-color: #666;
+}
+
+/* Estilos para los inputs */
+.photo-name-container input {
+    padding: 10px;
+    margin: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 200px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.photo-name-container input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Contenedor de botones */
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+.download-button {
+    background-color: #007bff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+/* Estilos para la vista previa */
+.photo-preview-container,
+.video-preview-container {
+    margin-top: 20px;
+}
+
+.photo-preview-container img {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.video-preview-container video {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor de la cámara */
+.camera-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedores para los botones de grabación y captura de fotos */
+.video-button-container {
+    margin-top: 20px;
+}
+
+/* Estilos para el input del nombre de la foto */
+.photo-name-container {
+    margin: 20px 0;
+}
+
+/* Estilos para el contador de fotos */
+.photo-count-container {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Estilos de los títulos */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Fondo de la aplicación */
+body {
+    background-color: #000;
+}
+
+/* Transiciones suaves */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
