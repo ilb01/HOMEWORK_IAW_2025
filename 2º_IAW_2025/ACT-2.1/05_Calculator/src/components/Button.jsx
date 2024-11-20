@@ -1,6 +1,6 @@
 import "./Button.css";
 
-const Button = ({ symbol, color, handleClick }) => {
+export default function Button({ symbol, color, handleClick }){
   return (
     <div
       onClick={() => handleClick(symbol)}
@@ -10,6 +10,4 @@ const Button = ({ symbol, color, handleClick }) => {
       {symbol}
     </div>
   );
-};
-
-export default Button;
+}

@@ -1,6 +1,6 @@
 import "./Input.css";
 
-const Input = ({ text, result }) => {
+export default function Input({ text, result }){
   return (
     <div className="input-wrapper">
       <div className="result">
@@ -13,5 +13,3 @@ const Input = ({ text, result }) => {
     </div>
   );
 };
-
-export default Input;

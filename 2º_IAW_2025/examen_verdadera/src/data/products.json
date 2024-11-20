@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Cafetera Espresso Pro",
+        "description": "Una cafetera professional per gaudir del millor cafè a casa.",
+        "price": 89.99,
+        "stars": 4,
+        "discount": 20
+    },
+    {
+        "id": 2,
+        "name": "Smartwatch FitLife",
+        "description": "Rellotge intel·ligent amb monitorització de salut i esport.",
+        "price": 129.99,
+        "stars": 4,
+        "discount": 25
+    },
+    {
+        "id": 3,
+        "name": "Auriculars Bluetooth Supreme",
+        "description": "Auriculars inalàmbrics amb so de qualitat premium.",
+        "price": 59.99,
+        "stars": 3,
+        "discount": 50
+    },
+    {
+        "id": 4,
+        "name": "Cadira ergonòmica Ultimate",
+        "description": "Dissenyada per al màxim confort durant llargues hores de treball.",
+        "price": 219.99,
+        "stars": 2,
+        "discount": 30
+    },
+    {
+        "id": 5,
+        "name": "Motxilla multiusos TravelPro",
+        "description": "Motxilla impermeable amb múltiples compartiments.",
+        "price": 49.99,
+        "stars": 1,
+        "discount": 10
+    },
+    {
+        "id": 6,
+        "name": "Robot de cuina MasterChef",
+        "description": "Perfecte per preparar menjars ràpids i saludables.",
+        "price": 299.99,
+        "stars": 5,
+        "discount": 40
+    },
+    {
+        "id": 7,
+        "name": "Llums LED Decoratives",
+        "description": "Llums LED per decorar qualsevol espai amb estil.",
+        "price": 19.99,
+        "stars": 3,
+        "discount": 5
+    },
+    {
+        "id": 8,
+        "name": "Altaveu portàtil SoundBlast",
+        "description": "Altaveu amb bateria de llarga durada i so envoltant.",
+        "price": 99.99,
+        "stars": 1,
+        "discount": 50
+    },
+    {
+        "id": 9,
+        "name": "Kit d'entrenament a casa",
+        "description": "Inclou bandes de resistència, estora i peses lleugeres.",
+        "price": 69.99,
+        "stars": 4,
+        "discount": 15
+    },
+    {
+        "id": 10,
+        "name": "Coixí de memòria cervical",
+        "description": "Coixí ergonòmic que ofereix un suport òptim per al coll.",
+        "price": 39.99,
+        "stars": 3,
+        "discount": 50
+    }
+]
