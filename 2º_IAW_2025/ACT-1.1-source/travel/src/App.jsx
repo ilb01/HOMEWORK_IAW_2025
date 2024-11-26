@@ -17,20 +17,20 @@ import {
     Navigate
 } from "react-router-dom";
 
-export default function App(){
-    return(
+export default function App() {
+    return (
         <Router>
-            <Header/>
-            <Navigation/>
+            <Header />
+            <Navigation />
             <Routes>
-                <Route path="/" element={<LandingPage/>}/>
-                <Route path="/about" element={<AboutPage/>}/>
-                <Route path="/blog" element={<BlogPage/>}/>
-                <Route path="/store" element={<ShopPage/>}/>
-                <Route path="/contact" element={<ContactPage/>}/>
-                <Route path="*" element={<Navigate replace to="/"/>}/>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/store" element={<ShopPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="*" element={<Navigate replace to="/" />} />
             </Routes>
-            <Footer/>
+            <Footer />
         </Router>
     )
 }

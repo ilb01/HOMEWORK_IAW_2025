@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Jacket",
+        "description": "Mens Winter Leathers Jackets",
+        "image": "./assets/images/products/jacket-3.jpg",
+        "rating": 3,
+        "price": 48.00,
+        "originalPrice": 96.00,
+        "offer": "50%"
+    },
+    {
+        "id": 2,
+        "name": "Shirt",
+        "description": "Pure Garment Dyed Cotton Shirt",
+        "image": "./assets/images/products/shirt-1.jpg",
+        "rating": 3,
+        "price": 45.00,
+        "originalPrice": 56.00
+    },
+    {
+        "id": 3,
+        "name": "Jacket",
+        "description": "MEN Yarn Fleece Full-Zip Jacket",
+        "image": "./assets/images/products/jacket-5.jpg",
+        "rating": 4,
+        "price": 58.00,
+        "originalPrice": 65.00
+    },
+    {
+        "id": 4,
+        "name": "Skirt",
+        "description": "Black Floral Wrap Midi Skirt",
+        "image": "./assets/images/products/clothes-3.jpg",
+        "rating": 5,
+        "price": 25.00,
+        "originalPrice": 35.00
+    },
+    {
+        "id": 5,
+        "name": "Pocket Watch",
+        "description": "Pocket Watch Leather Pouch",
+        "image": "./assets/images/products/watch-3.jpg",
+        "rating": 5,
+        "price": 100.00,
+        "originalPrice": 150.00
+    },
+    {
+        "id": 6,
+        "name": "Digital Watch",
+        "description": "Smart watch Vital Plus",
+        "image": "./assets/images/products/watch-1.jpg",
+        "rating": 5,
+        "price": 120.00,
+        "originalPrice": 180.00
+    },
+    {
+        "id": 7,
+        "name": "Party wear shoes",
+        "description": "Womens Party Wear Shoes",
+        "image": "./assets/images/products/party-wear-1.jpg",
+        "rating": 5,
+        "price": 110.00,
+        "originalPrice": 170.00
+    },
+    {
+        "id": 8,
+        "name": "Sport shoes",
+        "description": "Running & Trekking Shoes - White",
+        "image": "./assets/images/products/sports-1.jpg",
+        "rating": 5,
+        "price": 58.00,
+        "originalPrice": 89.00
+    }
+]
