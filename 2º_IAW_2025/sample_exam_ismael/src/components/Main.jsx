@@ -3,6 +3,7 @@ import Productos from "../data/productos.json"
 
 
 export default function Main() {
+    const rutaFoto = "/assets/images/products/"
     return (
         <main>
             <Banner />
@@ -14,7 +15,7 @@ export default function Main() {
                         <div class="offer">50%</div>
                     )}
                         <div class="info-1">
-                            <img src={'/assets/images/products/' + product.image} alt={product.name} />
+                            <img src={rutaFoto + product.image} alt={product.name} />
                             <h3>{product.name}</h3>
                             <h4>{product.description}</h4>
                         </div>
@@ -27,7 +28,7 @@ export default function Main() {
                                 <i class="fa-solid fa-star grey-star"></i>
                             </div>
                             <div class="price-box">
-                                <p class="price">48.00 &euro; <del>96.00 &euro;</del> </p>
+                                <p class="price">{product.price} &euro; <del>{product.originalPrice} &euro;</del> </p>
                                 <button>Add</button>
                             </div>
                         </div>

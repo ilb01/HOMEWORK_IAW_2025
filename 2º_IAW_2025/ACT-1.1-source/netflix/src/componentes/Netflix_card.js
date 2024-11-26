@@ -11,7 +11,7 @@ const Netflix = ({ id, title, img, year, pegi, matching, seasons, stars, desc, t
                     "undefined";
 
     return (
-        <article className="card">
+        <article className="card" key={id}>
             <div className="season">{verTemporadas()}</div>
             <img src={`./img/${img}`} alt={title} />
             <div className="container">
@@ -29,6 +29,7 @@ const Netflix = ({ id, title, img, year, pegi, matching, seasons, stars, desc, t
                     </div>
                 </div>
 
+                {/* ESTRELLAS */}
                 {stars > -1 &&
                     <div className="score">
                         <div className={(stars > 0) ? "star" : "star-off"}></div>
@@ -37,7 +38,6 @@ const Netflix = ({ id, title, img, year, pegi, matching, seasons, stars, desc, t
                         <div className={(stars > 3) ? "star" : "star-off"}></div>
                         <div className={(stars > 4) ? "star" : "star-off"}></div>
                     </div>}
-
 
                 <p>{desc}</p>
             </div>
