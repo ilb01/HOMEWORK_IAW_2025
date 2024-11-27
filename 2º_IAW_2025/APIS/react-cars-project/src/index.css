@@ -1,0 +1,71 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters select {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.car-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.car-detail button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.car-detail h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.car-detail p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.car-detail img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-top: 20px;
+}
