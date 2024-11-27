@@ -4,7 +4,7 @@ export default function Footer() {
     const initialState = {
         save: false,
         like: false,
-        likes: 121,
+        likes: 0,
     };
 
     const [state, setState] = useState(initialState);
