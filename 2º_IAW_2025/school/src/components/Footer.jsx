@@ -1,6 +1,4 @@
-import React from "react";
-
-function Footer() {
+export default function Footer() {
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -123,5 +121,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

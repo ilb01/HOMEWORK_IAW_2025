@@ -1,6 +1,6 @@
-import React from "react";
 import BreadCrumps from '../components/BreadCrumps'
-function About() {
+
+export default function About() {
   return (
     <div>
       <BreadCrumps  page="About us"  title="About Company"  />
@@ -283,5 +283,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

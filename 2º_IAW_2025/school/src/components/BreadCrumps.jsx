@@ -1,6 +1,4 @@
-import React from "react";
-
-function BreadCrumps(props) {
+export default function BreadCrumps(props) {
   return (
     <div>
       {/* about breadcrumb */}
@@ -29,5 +27,3 @@ function BreadCrumps(props) {
     </div>
   );
 }
-
-export default BreadCrumps;

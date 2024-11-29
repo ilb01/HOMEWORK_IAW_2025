@@ -1,7 +1,6 @@
-import React from "react";
 import BreadCrumps from "../components/BreadCrumps";
 
-function Contact() {
+export default function Contact(){
   return (
     <div>
       <BreadCrumps page="Contact us" title="Contact our Company" />
@@ -128,5 +127,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

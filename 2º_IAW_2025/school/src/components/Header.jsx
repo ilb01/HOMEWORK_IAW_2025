@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-function Header() {
+export default function Header() {
   const currentTheme = localStorage.getItem('theme');
     
   if (currentTheme) {
@@ -142,5 +142,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

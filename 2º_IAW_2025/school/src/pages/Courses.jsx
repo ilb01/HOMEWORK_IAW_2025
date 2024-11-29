@@ -1,7 +1,6 @@
-import React from "react";
 import BreadCrumps from "../components/BreadCrumps";
 
-function Courses() {
+export default function Courses() {
   return (
     <div>
       <BreadCrumps page="Courses" title="All Courses" />
@@ -482,5 +481,3 @@ function Courses() {
     </div>
   );
 }
-
-export default Courses;
