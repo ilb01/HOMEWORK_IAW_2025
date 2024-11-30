@@ -4,6 +4,7 @@ import './card.css'
 import {calculatePriceDiscountProduct} from "../util/discount.js"
 
 export default function Card({name, description, price, stars, image, percentDiscount}){
+  // ESTRELLAS
     let arrayStars = [];
     for(let i=0; i<5; i++){
         arrayStars.push(<FaStar key={i} className={i<stars?"yellow-star":"grey-star"}/>)

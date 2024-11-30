@@ -17,7 +17,6 @@ export default function AddPage({products, setProducts}){
     function handleChange(e){
         const {name, value} = e.target;
         let parsedValue;
-        console.log("hola");
         switch(name){
             case "price":
                 parsedValue = parseFloat(value);
