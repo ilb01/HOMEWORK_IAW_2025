@@ -5,7 +5,7 @@ import AddPage from './page/AddPage'
 import HotOffersPage from './page/HotOffersPage'
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { getProducts } from './service/ProductsService'
+import getProducts from './service/ProductsService'
 import './App.css';
 
 export default function App() {

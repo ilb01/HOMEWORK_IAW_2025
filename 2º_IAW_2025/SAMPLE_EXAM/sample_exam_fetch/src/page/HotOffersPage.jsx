@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import CardOffer from '../components/CardOffer'
-import { getOffers } from '../service/ProductsService'
+import getOffers from '../service/ProductsService'
 
 export default function HotOffersPage(){
     const [search, setSearch] = useState("");

@@ -1,4 +1,4 @@
-export function getProducts(setProducts, setLoading){
+export  default function getProducts(setProducts, setLoading){
     setLoading(true);
     fetch('/data/products.json')
         .then(res => res.json())
@@ -13,7 +13,7 @@ export function getProducts(setProducts, setLoading){
 }
 
 
-export function getOffers(setProducts){
+export default function getOffers(setProducts){
     return fetch('/data/products_offers.json')
         .then(res => res.json())
 }
