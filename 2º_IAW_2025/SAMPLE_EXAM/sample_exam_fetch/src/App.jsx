@@ -16,6 +16,9 @@ export default function App() {
         getProducts(setProducts, setLoading);
     }, []);
 
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
     return (
         <>
             <BrowserRouter>
