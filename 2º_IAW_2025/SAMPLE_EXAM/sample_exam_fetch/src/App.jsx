@@ -4,7 +4,7 @@ import HomePage from './page/HomePage'
 import AddPage from './page/AddPage'
 import HotOffersPage from './page/HotOffersPage'
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { getProducts } from './service/ProductsService'
 import './App.css';
 
@@ -21,7 +21,7 @@ export default function App() {
     }
     return (
         <>
-            <BrowserRouter>
+            <Router>
                 <TopInfo />
                 <Routes>
                     <Route path="/home" element={<HomePage products={products}
@@ -33,7 +33,7 @@ export default function App() {
                         setProducts={setProducts} />} />
                 </Routes>
                 <Footer />
-            </BrowserRouter>
+            </Router>
         </>
     )
 }
