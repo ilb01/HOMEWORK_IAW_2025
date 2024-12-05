@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Inception",
+        "year": "2010",
+        "description": "Un ladrón especializado en robar secretos a través del uso de la tecnología de invasión de sueños recibe la oportunidad de borrar su historial criminal a cambio de realizar un último trabajo."
+    },
+    {
+        "id": 2,
+        "title": "The Dark Knight",
+        "year": "2008",
+        "description": "Batman debe enfrentarse al Joker, un criminal psicópata que quiere sumergir a Gotham City en el caos y la destrucción."
+    },
+    {
+        "id": 3,
+        "title": "The Shawshank Redemption",
+        "year": "1994",
+        "description": "La historia de un hombre condenado injustamente que, durante su tiempo en prisión, forja una profunda amistad con un compañero y encuentra la esperanza de una vida mejor."
+    },
+    {
+        "id": 4,
+        "title": "The Godfather",
+        "year": "1972",
+        "description": "Un patriarca de una familia criminal lucha por mantener el control sobre su imperio y proteger a su familia de los peligros externos e internos."
+    },
+    {
+        "id": 5,
+        "title": "Pulp Fiction",
+        "year": "1994",
+        "description": "Una serie de historias entrelazadas de crimen y venganza, donde los protagonistas se enfrentan a situaciones extremas que cambian el curso de sus vidas."
+    },
+    {
+        "id": 6,
+        "title": "Forrest Gump",
+        "year": "1994",
+        "description": "La historia de un hombre con un coeficiente intelectual bajo que, sin embargo, vive una vida extraordinaria llena de eventos históricos y personales significativos."
+    },
+    {
+        "id": 7,
+        "title": "Gladiator",
+        "year": "2000",
+        "description": "Un general romano es traicionado y convertido en esclavo, y busca venganza contra el emperador que mató a su familia."
+    },
+    {
+        "id": 8,
+        "title": "Titanic",
+        "year": "1997",
+        "description": "Una historia de amor entre dos jóvenes de diferentes clases sociales a bordo del lujoso RMS Titanic, mientras el barco se hunde tras chocar con un iceberg."
+    },
+    {
+        "id": 9,
+        "title": "The Matrix",
+        "year": "1999",
+        "description": "Un programador de computadoras descubre que el mundo en el que vive no es real, sino una simulación creada por máquinas, y se une a un grupo de rebeldes para luchar por la libertad."
+    },
+    {
+        "id": 10,
+        "title": "Jurassic Park",
+        "year": "1993",
+        "description": "Un parque de atracciones con dinosaurios clonados se convierte en un caos cuando las criaturas escapan y ponen en peligro a los visitantes."
+    }
+]
