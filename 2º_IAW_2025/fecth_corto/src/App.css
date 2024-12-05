@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('./assets/css/Header.css');
+@import url('./assets/css/LandingPage.css');
+@import url('./assets/css/Movies.css');
+@import url('./assets/css/Series.css');
+@import url('./assets/css/Footer.css');

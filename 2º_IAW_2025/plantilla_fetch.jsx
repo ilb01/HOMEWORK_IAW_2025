@@ -5,7 +5,7 @@ export default function UsersList(){
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/data/...')
+        fetch('/data/...') //json
             .then(response => response.json())
             .then(data => {
                 setUsers(data);
@@ -18,6 +18,7 @@ export default function UsersList(){
     return (
         <div>
             <h1>Lista de Usuarios</h1>
+            {/* IMPRIMIR EL JSON */}
             <ul>
                 {users.map(user => (
                     <li key={user.id}>{user.name}</li>
