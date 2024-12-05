@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from '../components/SearchBar';
 
 export default function FetchData() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [searchTerm, setSearchTerm] = useState('');
+
+    // Filtrado de películas basado en el término de búsqueda
+    const filteredMovies = data.filter((item) =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     useEffect(() => {
         fetch('/data/movies.json')
-            .then(response => response.json())
-            .then(data => {
+            .then((response) => response.json())
+            .then((data) => {
                 setData(data);
                 setLoading(false);
             });
@@ -17,11 +24,16 @@ export default function FetchData() {
     return (
         <div className="fetch-data-container">
             <h1>Lista de Películas</h1>
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+
             {loading && <p className="loading">Cargando películas...</p>}
             <div className="movies-list">
-                {data.map(movie => (
+                {filteredMovies.map((movie) => (
                     <div key={movie.id} className="movie-item">
-                        <h2 className="movie-title">{movie.title} <span className="movie-year">({movie.year})</span></h2>
+                        <h2 className="movie-title">
+                            {movie.title}{' '}
+                            <span className="movie-year">({movie.year})</span>
+                        </h2>
                         <p className="movie-description">{movie.description}</p>
                     </div>
                 ))}
