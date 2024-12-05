@@ -1,4 +1,4 @@
-export  default function getProducts(setProducts, setLoading){
+export default function getProducts(setProducts, setLoading){
     setLoading(true);
     fetch('/data/products.json')
         .then(res => res.json())
