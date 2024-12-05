@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// IMPORTAR PAGINAS (pages)
 import './App.css';
 
 export default function App() {
@@ -33,6 +34,16 @@ export default function App() {
         </div>
       ))}
     </div>
+
+    // rutas de paginas 
+    // <Router>
+    // {/* componentes */}
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+
+    //   </Routes>
+    // {/* componentes footer */}
+    // </Router>
   );
 }
 
