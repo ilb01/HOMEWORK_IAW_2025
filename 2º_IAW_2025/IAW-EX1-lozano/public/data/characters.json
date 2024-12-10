@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Vegeta",
+        "planet": "Planet Vegeta",
+        "gender": "Male",
+        "power": 2000,
+        "image": "vegeta.png",
+        "description": "Vegeta is the prince of the Saiyan race, a proud and determined warrior. Raised on the warrior planet Planet Vegeta, he possesses an overwhelming sense of pride, often seen as stubborn and fiercely competitive. His power level of 2000 reflects his early stages before he undergoes significant training and transformations. Despite his arrogant demeanor, Vegeta becomes a valuable ally over time, particularly in his battles to protect Earth. His iconic appearance includes a royal Saiyan battle armor and a powerful, sharp gaze."
+    },
+    {
+        "id": 2,
+        "name": "Majin Boo",
+        "planet": "Casa de Mr. Satan",
+        "gender": "Male",
+        "power": 12500,
+        "image": "boogordo.png",
+        "description": "Majin Boo is a powerful and ancient creature originally created as a force of destruction. His personality fluctuates between childlike innocence and malicious intent, depending on the form he takes. Majin Boo's form here is a bloated, fat version who resides in the home of Mr. Satan (Hercule). Despite his appearance, he possesses immense power, capable of regenerating and altering his form. His strength is one of the highest, making him a formidable opponent."
+    },
+    {
+        "id": 3,
+        "name": "Frieza",
+        "planet": "Universe 7",
+        "gender": "Male",
+        "power": 125000,
+        "image": "freeza.png",
+        "description": "Frieza is one of the most notorious and ruthless villains in the universe. He commands the universe's most powerful army and rules over many planets with an iron fist. His power of 125000 makes him one of the strongest beings in the Dragon Ball universe. Frieza's iconic appearance includes his sleek, white-and-purple body, and he is often seen as the embodiment of evil, cruelty, and ambition. His desire for dominance and fearlessness in battle make him a fearsome enemy."
+    },
+    {
+        "id": 4,
+        "name": "Trunks",
+        "planet": "Planet Earth",
+        "gender": "Male",
+        "power": 1205,
+        "image": "trunks.png",
+        "description": "Trunks is the son of Vegeta and Bulma, inheriting his father's Saiyan strength and his mother's intellect. He is known for his bravery and determination, often playing a pivotal role in battles to protect Earth. Trunks has a youthful yet serious demeanor, and his strength of 1205 reflects his early training as a fighter. His signature sword and iconic purple hair make him easily recognizable in the Dragon Ball universe."
+    },
+    {
+        "id": 5,
+        "name": "Son Gohan",
+        "planet": "Paoz Mountain",
+        "gender": "Male",
+        "power": 10025,
+        "image": "gohan.png",
+        "description": "Son Gohan is the eldest son of Goku and Chi-Chi, a kind-hearted and intelligent young warrior. He is known for his immense potential and his early involvement in battles against powerful foes. His power of 10025 reflects his vast abilities, especially as he trains under his father and Piccolo. Gohan's most notable moment comes when he defeats Cell in the Cell Games, showing his maturity and strength. His appearance often includes a traditional gi and a compassionate, yet determined, expression."
+    },
+    {
+        "id": 6,
+        "name": "Bulma",
+        "planet": "Earth",
+        "gender": "Female",
+        "power": 50,
+        "image": "bulma.png",
+        "description": "Bulma is a brilliant scientist and one of the main characters of the Dragon Ball series. Although not a fighter, her intellect and resourcefulness make her a valuable ally to Goku and the others. With a power level of 50, she is not known for physical combat but is essential for creating technological advancements, such as the Dragon Radar and various battle armor. Bulma is also the mother of Trunks and wife of Vegeta, known for her strong-willed and independent personality."
+    },
+    {
+        "id": 7,
+        "name": "Cell",
+        "planet": "Dr. Gero's Laboratory",
+        "gender": "None",
+        "power": 125000,
+        "image": "cell.png",
+        "description": "Cell is a bio-engineered android created by Dr. Gero, with the ability to absorb other beings to increase his power. He is a formidable and dangerous villain in the Dragon Ball universe, with a power of 125000. His appearance is insectoid, with a sleek, green body and distinct markings on his face and torso. Cell's primary goal is to become the perfect being, and he does so by absorbing androids and other powerful fighters. His ability to regenerate and his threatening nature make him one of the most dangerous enemies Goku and his allies face."
+    },
+    {
+        "id": 8,
+        "name": "Chi-Chi",
+        "planet": "Earth",
+        "gender": "Female",
+        "power": 120,
+        "image": "chichi.png",
+        "description": "Chi-Chi is the loving and protective mother of Gohan and Goten, and the wife of Goku. Although she is not a fighter like her husband and son, Chi-Chi is a skilled martial artist in her own right. She has a strong-willed and sometimes demanding personality, especially when it comes to her family’s safety and education. Her power level of 120 is modest, but she is a tough and dedicated woman who will fight fiercely to protect her loved ones."
+    },
+    {
+        "id": 9,
+        "name": "Piccolo",
+        "planet": "Planet Namek",
+        "gender": "Male",
+        "power": 14000,
+        "image": "piccolo.png",
+        "description": "Piccolo is a Namekian warrior, originally a villain but later becoming one of Earth’s greatest protectors. He is a skilled martial artist with immense spiritual power and a calm, wise demeanor. His power of 14000 comes from his rigorous training and his ability to use techniques like the Special Beam Cannon and regeneration. Piccolo’s wisdom and loyalty to his friends make him an invaluable ally. He plays a critical role in mentoring Gohan and helping defeat powerful enemies, including his role in the defeat of Cell."
+    },
+    {
+        "id": 10,
+        "name": "Yamcha",
+        "planet": "Earth",
+        "gender": "Male",
+        "power": 900,
+        "image": "yamcha.png",
+        "description": "Yamcha is a skilled martial artist and one of Goku’s early companions. Initially a desert bandit, he later becomes one of Goku's closest friends. Though he is often overshadowed by more powerful fighters, Yamcha plays an important role in the Dragon Ball universe. His power of 900 reflects his martial arts ability, though he is often seen as a less intimidating fighter compared to others. Despite this, Yamcha remains a brave and loyal member of the Z Fighters, willing to fight for the protection of Earth."
+    },
+    {
+        "id": 11,
+        "name": "Krillin",
+        "planet": "Earth",
+        "gender": "Male",
+        "power": 1000,
+        "image": "krillin.png",
+        "description": "Krillin is one of Goku's best friends and a brave, loyal fighter. Despite being a human with a power of 1000, Krillin plays a pivotal role in the Dragon Ball saga, helping Goku in many key battles. He is known for his courage and selflessness, often stepping up in the face of danger. Although he is not as strong as some of the other Z Fighters, Krillin's intelligence, martial arts skills, and determination make him a vital part of the team."
+    },
+    {
+        "id": 12,
+        "name": "Goku",
+        "planet": "Planet Earth",
+        "gender": "Male",
+        "power": 150000,
+        "image": "goku.png",
+        "description": "Goku is the main protagonist of the Dragon Ball series. A Saiyan raised on Earth, Goku possesses a unique blend of power, optimism, and determination. His power level of 150000 is the result of his rigorous training and transformations, such as the Super Saiyan form. Goku’s fighting spirit and insatiable desire to improve have led him to face and overcome some of the universe’s most powerful opponents. His iconic appearance includes his spiky hair, orange gi, and cheerful personality, making him one of the most beloved characters in anime history."
+    }
+]
